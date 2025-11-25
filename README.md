@@ -1,336 +1,136 @@
-# Muhammad Tahir Hussain - Backend Developer Portfolio
+# Muhammad Tahir Hussain
 
-A modern, professional, and eye-catching portfolio website showcasing backend development skills and projects.
+## Backend Developer | Python | Django | FastAPI
 
-## 🌟 Features
-
-- **Responsive Design**: Fully responsive across desktop, tablet, and mobile devices
-- **Modern UI/UX**: Clean, minimalistic design with eye-catching animations
-- **4 Main Pages**: Home, About, Projects, and Contact
-- **Smooth Animations**: Fade-in effects, hover animations, and scroll-triggered animations
-- **Interactive Elements**: Hover effects on profile image, buttons, and project cards
-- **Form Validation**: JavaScript-based contact form validation
-- **Social Integration**: Links to LinkedIn, GitHub, WhatsApp, and Email
-- **SEO Optimized**: Proper meta tags for search engine optimization
-- **Fast Loading**: Optimized images and code for quick load times
-
-## 📁 Project Structure
-
-```
-tahir-portfolio/
-│
-├── public/                 # Public-facing entry point
-│   └── index.html         # Home/landing page
-│
-├── src/                   # Source files
-│   ├── assets/           # Static assets
-│   │   ├── css/         # Stylesheets
-│   │   │   └── style.css # Main stylesheet
-│   │   ├── js/          # JavaScript files
-│   │   │   └── script.js # Main JavaScript
-│   │   ├── images/      # Image assets
-│   │   │   ├── projects/ # Project screenshots
-│   │   │   ├── icons/    # Icon files
-│   │   │   └── IMAGE_REQUIREMENTS.txt
-│   │   └── fonts/       # Custom fonts
-│   │
-│   ├── pages/           # Additional HTML pages
-│   │   ├── about.html   # About page
-│   │   ├── projects.html # Projects showcase
-│   │   └── contact.html  # Contact form
-│   │
-│   └── components/      # Reusable components (future)
-│
-├── docs/                # Documentation
-│   └── STRUCTURE.md    # Project structure guide
-│
-├── README.md           # Project documentation
-├── .gitignore         # Git ignore rules
-└── .editorconfig      # Editor configuration
-```
-
-> **Note**: For detailed information about the project structure and file organization, see [docs/STRUCTURE.md](docs/STRUCTURE.md)
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Text editor (VS Code, Sublime Text, etc.) for customization
-- Basic knowledge of HTML, CSS, and JavaScript
-
-### Installation
-
-1. **Download or clone the project**
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-   cd portfolio
-   ```
-
-2. **Add your images**
-   - Place your profile picture in `images/profile.jpg` (recommended size: 350x350px)
-   - Add project screenshots to the `images/` folder
-   - Update image paths in HTML files if needed
-
-3. **Customize personal information**
-   - Update name, contact details, and social links in all HTML files
-   - Replace placeholder GitHub/LinkedIn URLs with your actual profiles
-   - Update resume Google Drive link in `index.html` and `contact.html`
-   - Modify project information in `projects.html`
-
-4. **Open the website**
-   - Open `public/index.html` in your web browser
-   - Or use a local server for better development experience
-
-### Using a Local Server (Optional)
-
-For better development experience, use a local server:
-
-**Using Python:**
-```bash
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-```
-
-**Using Node.js (with http-server):**
-```bash
-npm install -g http-server
-http-server
-```
-
-**Using VS Code:**
-- Install "Live Server" extension
-- Right-click on `public/index.html` and select "Open with Live Server"
-
-Then navigate to `http://localhost:8000` (or the port shown) in your browser.
-
-## 🎨 Customization Guide
-
-### Updating Personal Information
-
-1. **Home Page (`public/index.html`)**
-   - Update your full name
-   - Update your title/role
-   - Update introduction tagline
-   - Update social media links
-   - Update resume download link
-   - Replace profile image path
-
-2. **About Page (`src/pages/about.html`)**
-   - Update "Who I Am" section
-   - Update work experience details
-   - Update technical skills and percentages
-   - Update strengths and personal qualities
-
-3. **Projects Page (`src/pages/projects.html`)**
-   - Update each project card with:
-     - Project title
-     - Description
-     - Tech stack tags
-     - GitHub repository links
-     - Project images
-
-4. **Contact Page (`src/pages/contact.html`)**
-   - Update contact information
-   - Update resume download link
-   - Update social media links
-
-### Customizing Colors
-
-Edit `src/assets/css/style.css` to change the color scheme:
-
-```css
-:root {
-    --primary-color: #6366f1;      /* Main brand color */
-    --secondary-color: #8b5cf6;    /* Secondary accent */
-    --accent-color: #ec4899;       /* Accent highlights */
-    --dark-bg: #0f172a;            /* Main background */
-    --darker-bg: #020617;          /* Darker sections */
-    /* ... other variables */
-}
-```
-
-### Adding/Removing Projects
-
-To add a new project in `src/pages/projects.html`:
-
-```html
-<div class="col-lg-4 col-md-6 fade-in-up">
-    <div class="project-card">
-        <div class="project-image">
-            <img src="images/your-project.jpg" alt="Project Name" class="img-fluid">
-            <div class="project-overlay">
-                <div class="project-links">
-                    <a href="https://github.com/your-repo" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="project-content">
-            <h4 class="project-title">Your Project Name</h4>
-            <p class="project-description">Project description...</p>
-            <div class="tech-stack">
-                <span class="tech-tag">Technology 1</span>
-                <span class="tech-tag">Technology 2</span>
-            </div>
-            <div class="project-footer">
-                <a href="https://github.com/your-repo" target="_blank" class="btn btn-sm btn-outline-primary">
-                    <i class="fab fa-github me-2"></i>View Code
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-```
-
-## 🖼️ Image Requirements
-
-### Profile Picture
-- **Location**: `src/assets/images/profile.jpg`
-- **Recommended Size**: 350x350px (square)
-- **Format**: JPG, PNG, or WebP
-- **Quality**: High resolution for sharp display
-
-### Project Images
-- **Location**: `src/assets/images/projects/`
-- **Recommended Size**: 600x400px (3:2 ratio)
-- **Format**: JPG, PNG, or WebP
-- **Names**: Use descriptive names (e.g., `project-ecommerce.jpg`)
-- **Optimization**: Compress images for faster loading
-
-See `src/assets/images/IMAGE_REQUIREMENTS.txt` for more details.
-
-## 📝 Resume Setup
-
-To enable resume download functionality:
-
-1. Upload your resume PDF to Google Drive
-2. Set sharing permissions to "Anyone with the link can view"
-3. Get the shareable link
-4. Extract the file ID from the URL
-5. Update the download links in:
-   - `public/index.html`
-   - `src/pages/contact.html`
-
-**Example:**
-```
-Google Drive URL: https://drive.google.com/file/d/1AbC123dEf456GhI789/view
-File ID: 1AbC123dEf456GhI789
-```
-
-Replace `YOUR_RESUME_ID` with your actual file ID.
-
-## 🌐 Deployment
-
-### GitHub Pages
-
-1. Create a new repository on GitHub
-2. Push your code to the repository
-3. Go to repository Settings → Pages
-4. Select branch (usually `main`) and root folder
-5. Save and wait for deployment
-6. Your site will be available at `https://yourusername.github.io/repository-name`
-
-### Netlify
-
-1. Sign up for [Netlify](https://www.netlify.com/)
-2. Drag and drop your project folder
-3. Your site will be deployed instantly with a custom URL
-
-### Vercel
-
-1. Sign up for [Vercel](https://vercel.com/)
-2. Import your GitHub repository
-3. Deploy with one click
-
-## 🔧 Technologies Used
-
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Styling, animations, and responsive design
-- **JavaScript (ES6+)**: Interactivity and form validation
-- **Bootstrap 5**: Responsive grid system and components
-- **Font Awesome 6**: Icons and social media symbols
-- **Google Fonts**: Custom typography (Poppins, Playfair Display)
-
-## ✨ Key Features Breakdown
-
-### Animations
-- Fade-in animations on scroll
-- Gradient shifting on name
-- Rotating border on profile image
-- Hover effects on cards and buttons
-- Progress bar animations
-- Smooth scroll navigation
-
-### Responsive Design
-- Mobile-first approach
-- Breakpoints for tablet and desktop
-- Hamburger menu for mobile devices
-- Touch-friendly buttons and links
-
-### Performance
-- Lazy loading for images
-- Optimized CSS and JavaScript
-- Minified resources for production
-- Fast page load times
-
-## 📱 Social Media Integration
-
-Update these placeholders with your actual profiles:
-
-- **LinkedIn**: `https://linkedin.com/in/your-profile`
-- **GitHub**: `https://github.com/your-username`
-- **WhatsApp**: `https://wa.me/your-phone-number`
-- **Email**: `your.email@example.com`
-
-## 🐛 Troubleshooting
-
-### Images not displaying
-- Check that image files are in the `images/` folder
-- Verify image file names match those in HTML
-- Ensure proper file extensions (.jpg, .png)
-
-### Animations not working
-- Clear browser cache
-- Check browser console for JavaScript errors
-- Ensure script.js is loaded correctly
-
-### Form not validating
-- Check browser console for errors
-- Verify that script.js is properly linked
-- Test in different browsers
-
-## 📄 License
-
-This project is open source and available for personal and commercial use. Feel free to customize it for your own portfolio!
-
-## 👨‍💻 Author
-
-**Muhammad Tahir Hussain**
-- Backend Developer
-- Python | Django | FastAPI | DRF
-
-## 🙏 Acknowledgments
-
-- Bootstrap 5 for the responsive framework
-- Font Awesome for icons
-- Google Fonts for typography
-- Inspiration from modern portfolio designs
-
-## 📞 Contact & Support
-
-If you have any questions or need help customizing this portfolio:
-
-- Email: tahir.hussain@example.com
-- LinkedIn: [Muhammad Tahir Hussain](https://linkedin.com/in/muhammad-tahir-hussain)
-- GitHub: [muhammad-tahir-hussain](https://github.com/muhammad-tahir-hussain)
+Hi, I'm **Muhammad Tahir Hussain**, a passionate Backend Developer with expertise in building scalable, efficient, and secure server-side applications.
 
 ---
 
-**Note**: Remember to update all placeholder information with your actual details before deploying!
+## 👨‍💻 About Me
 
-Built with ❤️ using HTML, CSS, JavaScript, and Bootstrap 5
+I am a Backend Developer with strong experience in Python and Django. I focus on building secure and scalable backend systems and creating well-structured RESTful APIs. I have worked with Django REST Framework, FastAPI, Flask, Celery, PostgreSQL, MySQL, and MongoDB.
+
+I enjoy writing clean, efficient code and always aim to follow best practices. My work includes API development, database design, asynchronous tasks, and real-time data integrations for web and mobile applications. I am comfortable working in Agile teams and use tools like Git, Jira, and Trello to manage projects smoothly.
+
+Before becoming a full-time developer, I taught computer science, which helped me strengthen my communication skills and deepen my understanding of core programming concepts. I am a dedicated learner who enjoys exploring better ways to solve problems and improve overall system performance.
+
+---
+
+## 💼 Professional Experience
+
+### Backend Developer
+**Enigmatix Pvt Ltd** | Current
+
+- Developing and maintaining backend systems using Python, Django, and FastAPI
+- Building RESTful APIs for web and mobile applications
+- Working with databases including PostgreSQL, MySQL, and MongoDB
+- Implementing asynchronous task processing with Celery
+- Collaborating with cross-functional teams in Agile environment
+- Managing version control and project workflows using Git, Jira, and Trello
+
+---
+
+## 🛠️ Technical Skills
+
+### Programming Languages
+- Python
+- SQL
+- JavaScript
+
+### Backend Frameworks
+- Django
+- Django REST Framework (DRF)
+- FastAPI
+- Flask
+
+### Databases
+- PostgreSQL
+- MySQL
+- MongoDB
+- Redis
+
+### Tools & Technologies
+- Celery (Asynchronous Task Queue)
+- Git & GitHub
+- Docker
+- Linux/Unix
+- RESTful API Design
+- Postman / Insomnia
+- Jira & Trello
+
+### Development Practices
+- Clean Code Principles
+- Test-Driven Development (TDD)
+- Agile Methodology
+- API Documentation
+- Database Design & Optimization
+- Security Best Practices
+
+---
+
+## 🎓 Background
+
+Former Computer Science Teacher with a strong foundation in:
+- Core programming concepts
+- Software development principles
+- Technical communication
+- Problem-solving methodologies
+
+This teaching experience enhanced my ability to:
+- Explain complex technical concepts clearly
+- Collaborate effectively with team members
+- Understand requirements from different perspectives
+- Mentor and guide junior developers
+
+---
+
+## 🌟 What I Do
+
+- **API Development**: Design and implement robust RESTful APIs
+- **Database Management**: Structure and optimize relational and NoSQL databases
+- **Backend Architecture**: Build scalable and maintainable server-side systems
+- **Integration**: Connect backend services with third-party APIs and services
+- **Performance Optimization**: Improve application speed and efficiency
+- **Security**: Implement authentication, authorization, and data protection
+
+---
+
+## 📫 Get In Touch
+
+- **LinkedIn**: [muhammadtahirhussain](https://linkedin.com/in/muhammadtahirhussain)
+- **GitHub**: [tahirhussainswe](https://github.com/tahirhussainswe)
+- **Email**: [tahirhussain.swe@gmail.com](mailto:tahirhussain.swe@gmail.com)
+- **WhatsApp**: [+92 301 6480483](https://wa.me/923016480483)
+- **Resume**: [Download CV](https://drive.google.com/file/d/13_sDiMFL4QtkbsVauegfoHY775DWr8zy/view?usp=drive_link)
+
+---
+
+## 🚀 Current Focus
+
+I'm currently focused on:
+- Building high-performance backend systems
+- Exploring microservices architecture
+- Deepening expertise in system design and scalability
+- Contributing to open-source projects
+- Learning cloud technologies (AWS, Azure)
+
+---
+
+## 💡 Philosophy
+
+I believe in writing code that is:
+- **Clean**: Easy to read and maintain
+- **Efficient**: Optimized for performance
+- **Secure**: Protected against vulnerabilities
+- **Scalable**: Ready to grow with demand
+- **Documented**: Well-explained for team collaboration
+
+---
+
+**Portfolio Website**: [View Live](https://yourdomain.com)
+
+*Always open to interesting projects and collaboration opportunities!*
+
+---
+
+Built with dedication and a passion for backend development 🚀
