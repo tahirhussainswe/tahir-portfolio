@@ -87,7 +87,9 @@
                     <h1 class="display-3 fw-bold mb-3">
                         Hi, I'm <span class="name-highlight">Muhammad Tahir Hussain</span>
                     </h1>
-                    <h2 class="h3 text-light mb-4">Backend Developer</h2>
+                    <h2 class="h3 text-light mb-4">
+                        Backend Developer | <span class="skill-rotate" id="rotating-skill"></span>
+                    </h2>
                     <p class="lead mb-4">
                         I am a Backend Developer with strong expertise in Python and Django, including Django REST Framework, and working knowledge of FastAPI and Flask. I have extensive experience in designing and developing secure, scalable backend systems and well-structured RESTful APIs.
                     </p>
@@ -253,5 +255,34 @@
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Rotating Skills Script -->
+    <script>
+        // Rotating skills animation
+        const skills = ['Python', 'Django', 'DRF', 'FastAPI', 'Flask', 'REST APIs'];
+        let currentSkillIndex = 0;
+        const skillElement = document.getElementById('rotating-skill');
+
+        function changeSkill() {
+            // Fade out
+            skillElement.style.opacity = '0';
+
+            setTimeout(() => {
+                // Change text
+                currentSkillIndex = (currentSkillIndex + 1) % skills.length;
+                skillElement.textContent = skills[currentSkillIndex];
+
+                // Fade in
+                skillElement.style.opacity = '1';
+            }, 500);
+        }
+
+        // Set initial skill
+        skillElement.textContent = skills[0];
+        skillElement.style.transition = 'opacity 0.5s ease-in-out';
+
+        // Change skill every 2 seconds
+        setInterval(changeSkill, 2000);
+    </script>
 </body>
 </html>
