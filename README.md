@@ -17,29 +17,39 @@ A modern, professional, and eye-catching portfolio website showcasing backend de
 ## 📁 Project Structure
 
 ```
-muhammad-tahir-portfolio/
+tahir-portfolio/
 │
-├── index.html              # Home page
-├── about.html              # About page with experience and skills
-├── projects.html           # Projects showcase page
-├── contact.html            # Contact page with form
-├── README.md               # Project documentation
+├── public/                 # Public-facing entry point
+│   └── index.html         # Home/landing page
 │
-├── css/
-│   └── style.css          # Custom styles and animations
+├── src/                   # Source files
+│   ├── assets/           # Static assets
+│   │   ├── css/         # Stylesheets
+│   │   │   └── style.css # Main stylesheet
+│   │   ├── js/          # JavaScript files
+│   │   │   └── script.js # Main JavaScript
+│   │   ├── images/      # Image assets
+│   │   │   ├── projects/ # Project screenshots
+│   │   │   ├── icons/    # Icon files
+│   │   │   └── IMAGE_REQUIREMENTS.txt
+│   │   └── fonts/       # Custom fonts
+│   │
+│   ├── pages/           # Additional HTML pages
+│   │   ├── about.html   # About page
+│   │   ├── projects.html # Projects showcase
+│   │   └── contact.html  # Contact form
+│   │
+│   └── components/      # Reusable components (future)
 │
-├── js/
-│   └── script.js          # JavaScript functionality
+├── docs/                # Documentation
+│   └── STRUCTURE.md    # Project structure guide
 │
-└── images/                # Image assets
-    ├── profile.jpg        # Profile picture (350x350px recommended)
-    ├── project-ecommerce.jpg
-    ├── project-realtime.jpg
-    ├── project-analytics.jpg
-    ├── project-microservices.jpg
-    ├── project-auth.jpg
-    └── project-blog.jpg
+├── README.md           # Project documentation
+├── .gitignore         # Git ignore rules
+└── .editorconfig      # Editor configuration
 ```
+
+> **Note**: For detailed information about the project structure and file organization, see [docs/STRUCTURE.md](docs/STRUCTURE.md)
 
 ## 🚀 Getting Started
 
@@ -69,7 +79,7 @@ muhammad-tahir-portfolio/
    - Modify project information in `projects.html`
 
 4. **Open the website**
-   - Simply open `index.html` in your web browser
+   - Open `public/index.html` in your web browser
    - Or use a local server for better development experience
 
 ### Using a Local Server (Optional)
@@ -93,7 +103,7 @@ http-server
 
 **Using VS Code:**
 - Install "Live Server" extension
-- Right-click on `index.html` and select "Open with Live Server"
+- Right-click on `public/index.html` and select "Open with Live Server"
 
 Then navigate to `http://localhost:8000` (or the port shown) in your browser.
 
@@ -101,21 +111,21 @@ Then navigate to `http://localhost:8000` (or the port shown) in your browser.
 
 ### Updating Personal Information
 
-1. **Home Page (`index.html`)**
-   - Line 56: Update your full name
-   - Line 58: Update your title/role
-   - Line 60: Update introduction tagline
-   - Lines 64-76: Update social media links
-   - Line 81: Update resume download link
-   - Line 95: Replace `images/profile.jpg` with your image
+1. **Home Page (`public/index.html`)**
+   - Update your full name
+   - Update your title/role
+   - Update introduction tagline
+   - Update social media links
+   - Update resume download link
+   - Replace profile image path
 
-2. **About Page (`about.html`)**
-   - Lines 50-62: Update "Who I Am" section
-   - Lines 68-166: Update work experience details
-   - Lines 175-364: Update technical skills and percentages
-   - Lines 373-441: Update strengths and personal qualities
+2. **About Page (`src/pages/about.html`)**
+   - Update "Who I Am" section
+   - Update work experience details
+   - Update technical skills and percentages
+   - Update strengths and personal qualities
 
-3. **Projects Page (`projects.html`)**
+3. **Projects Page (`src/pages/projects.html`)**
    - Update each project card with:
      - Project title
      - Description
@@ -123,14 +133,14 @@ Then navigate to `http://localhost:8000` (or the port shown) in your browser.
      - GitHub repository links
      - Project images
 
-4. **Contact Page (`contact.html`)**
-   - Lines 64-92: Update contact information
-   - Line 97: Update resume download link
-   - Lines 105-121: Update social media links
+4. **Contact Page (`src/pages/contact.html`)**
+   - Update contact information
+   - Update resume download link
+   - Update social media links
 
 ### Customizing Colors
 
-Edit `css/style.css` to change the color scheme:
+Edit `src/assets/css/style.css` to change the color scheme:
 
 ```css
 :root {
@@ -145,7 +155,7 @@ Edit `css/style.css` to change the color scheme:
 
 ### Adding/Removing Projects
 
-To add a new project in `projects.html`:
+To add a new project in `src/pages/projects.html`:
 
 ```html
 <div class="col-lg-4 col-md-6 fade-in-up">
@@ -180,16 +190,19 @@ To add a new project in `projects.html`:
 ## 🖼️ Image Requirements
 
 ### Profile Picture
-- **Location**: `images/profile.jpg`
+- **Location**: `src/assets/images/profile.jpg`
 - **Recommended Size**: 350x350px (square)
 - **Format**: JPG, PNG, or WebP
 - **Quality**: High resolution for sharp display
 
 ### Project Images
+- **Location**: `src/assets/images/projects/`
 - **Recommended Size**: 600x400px (3:2 ratio)
 - **Format**: JPG, PNG, or WebP
 - **Names**: Use descriptive names (e.g., `project-ecommerce.jpg`)
 - **Optimization**: Compress images for faster loading
+
+See `src/assets/images/IMAGE_REQUIREMENTS.txt` for more details.
 
 ## 📝 Resume Setup
 
@@ -200,8 +213,8 @@ To enable resume download functionality:
 3. Get the shareable link
 4. Extract the file ID from the URL
 5. Update the download links in:
-   - `index.html` (line 81)
-   - `contact.html` (line 97)
+   - `public/index.html`
+   - `src/pages/contact.html`
 
 **Example:**
 ```
