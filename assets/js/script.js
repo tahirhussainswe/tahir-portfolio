@@ -498,6 +498,42 @@ console.log(
 );
 
 // ========================================
+// PROJECT READ MORE TOGGLE
+// ========================================
+
+/**
+ * Toggle Read More/Read Less functionality for project descriptions
+ * @param {HTMLElement} button - The button element that was clicked
+ */
+function toggleReadMore(button) {
+    const projectContent = button.closest('.project-content');
+    const shortDescription = projectContent.querySelector('.project-description-short');
+    const fullDescription = projectContent.querySelector('.project-description-full');
+    const icon = button.querySelector('i');
+    const buttonText = button.childNodes[1]; // Text node after icon
+
+    if (fullDescription.style.display === 'none' || fullDescription.style.display === '') {
+        // Show full description
+        shortDescription.style.display = 'none';
+        fullDescription.style.display = 'block';
+        icon.className = 'fas fa-book me-2';
+        button.innerHTML = '<i class="fas fa-book me-2"></i>Read Less';
+
+        // Smooth scroll to project card
+        button.closest('.project-card').scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest'
+        });
+    } else {
+        // Show short description
+        shortDescription.style.display = 'block';
+        fullDescription.style.display = 'none';
+        icon.className = 'fas fa-book-open me-2';
+        button.innerHTML = '<i class="fas fa-book-open me-2"></i>Read More';
+    }
+}
+
+// ========================================
 // PERFORMANCE MONITORING (Development)
 // ========================================
 
