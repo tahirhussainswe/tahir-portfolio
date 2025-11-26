@@ -534,6 +534,111 @@ function toggleReadMore(button) {
 }
 
 // ========================================
+// SEE MORE PROJECTS TOGGLE
+// ========================================
+
+/**
+ * Toggle visibility of additional GitHub projects
+ */
+function toggleMoreGithubProjects() {
+    const moreGithubDiv = document.getElementById('moreGithubProjects');
+    const seeMoreBtn = document.getElementById('seeMoreGithubBtn');
+
+    if (!moreGithubDiv || !seeMoreBtn) return;
+
+    const icon = seeMoreBtn.querySelector('i');
+
+    if (moreGithubDiv.style.display === 'none' || moreGithubDiv.style.display === '') {
+        // Show more projects
+        moreGithubDiv.style.display = 'block';
+        icon.className = 'fas fa-chevron-up me-2';
+        seeMoreBtn.innerHTML = '<i class="fas fa-chevron-up me-2"></i>See Less GitHub Projects';
+
+        // Smooth scroll to more projects section
+        setTimeout(() => {
+            moreGithubDiv.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }, 100);
+    } else {
+        // Hide more projects
+        moreGithubDiv.style.display = 'none';
+        icon.className = 'fas fa-chevron-down me-2';
+        seeMoreBtn.innerHTML = '<i class="fas fa-chevron-down me-2"></i>See More GitHub Projects';
+    }
+}
+
+/**
+ * Toggle visibility of additional client projects
+ */
+function toggleMoreClientProjects() {
+    const moreClientDiv = document.getElementById('moreClientProjects');
+    const seeMoreBtn = document.getElementById('seeMoreClientBtn');
+
+    if (!moreClientDiv || !seeMoreBtn) return;
+
+    const icon = seeMoreBtn.querySelector('i');
+
+    if (moreClientDiv.style.display === 'none' || moreClientDiv.style.display === '') {
+        // Show more projects
+        moreClientDiv.style.display = 'block';
+        icon.className = 'fas fa-chevron-up me-2';
+        seeMoreBtn.innerHTML = '<i class="fas fa-chevron-up me-2"></i>See Less Client Projects';
+
+        // Smooth scroll to more projects section
+        setTimeout(() => {
+            moreClientDiv.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }, 100);
+    } else {
+        // Hide more projects
+        moreClientDiv.style.display = 'none';
+        icon.className = 'fas fa-chevron-down me-2';
+        seeMoreBtn.innerHTML = '<i class="fas fa-chevron-down me-2"></i>See More Client Projects';
+    }
+}
+
+/**
+ * Toggle visibility of additional projects
+ */
+function toggleMoreProjects() {
+    const moreProjectsDiv = document.getElementById('moreProjects');
+    const seeMoreBtn = document.getElementById('seeMoreBtn');
+    const icon = seeMoreBtn.querySelector('i');
+
+    if (moreProjectsDiv.style.display === 'none' || moreProjectsDiv.style.display === '') {
+        // Show more projects
+        moreProjectsDiv.style.display = 'block';
+        icon.className = 'fas fa-chevron-up me-2';
+        seeMoreBtn.innerHTML = '<i class="fas fa-chevron-up me-2"></i>See Less Projects';
+
+        // Smooth scroll to more projects section
+        setTimeout(() => {
+            moreProjectsDiv.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }, 100);
+    } else {
+        // Hide more projects
+        moreProjectsDiv.style.display = 'none';
+        icon.className = 'fas fa-chevron-down me-2';
+        seeMoreBtn.innerHTML = '<i class="fas fa-chevron-down me-2"></i>See More Projects';
+
+        // Scroll back to the button
+        setTimeout(() => {
+            seeMoreBtn.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }, 100);
+    }
+}
+
+// ========================================
 // PERFORMANCE MONITORING (Development)
 // ========================================
 

@@ -77,6 +77,9 @@
                         <a class="nav-link active" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="journey.html">Journey</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -99,419 +102,344 @@
     <!-- Projects Section -->
     <section class="projects-section py-5">
         <div class="container">
-            <div class="row g-4">
-                <!-- Project 1 -->
+
+            <!-- ========================================
+                 GITHUB / OPEN SOURCE PROJECTS SECTION
+                 ======================================== -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h3 class="section-subtitle text-gradient mb-2">
+                        <i class="fab fa-github me-2"></i>GitHub & Open Source Projects
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row g-4" id="githubProjects">
+                <!-- Project 1 - GitHub Project -->
                 <div class="col-lg-4 col-md-6 fade-in-up">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/3b82f6/ffffff?text=E-Commerce+API" alt="E-Commerce API" class="img-fluid">
+                            <img src="https://via.placeholder.com/400x300/3b82f6/ffffff?text=Django+Push+Notifications" alt="Django Push Notifications" class="img-fluid">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="https://example.com/project1" target="_blank" class="project-link" title="View on GitHub">
+                                    <a href="https://github.com/tahirhussainswe/django_projects" target="_blank" class="project-link" title="View on GitHub">
                                         <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h4 class="project-title">E-Commerce REST API</h4>
-                            <p class="project-description">
-                                A comprehensive e-commerce backend built with Django REST Framework featuring
-                                user authentication, product catalog, shopping cart, order management,
-                                and payment integration.
+                            <h4 class="project-title">Django Push Notification System</h4>
+                            <span class="badge bg-success text-white mb-2">Open Source</span>
+
+                            <!-- Short description -->
+                            <p class="project-description project-description-short">
+                                A Django-based push notification system that enables real-time notifications
+                                for web and mobile applications with scheduling and delivery tracking.
                             </p>
+
+                            <!-- Full description -->
+                            <div class="project-description-full" style="display: none;">
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-info-circle text-primary me-2"></i>About</h6>
+                                    <p class="text-muted small mb-3">
+                                        A comprehensive push notification system built with Django that enables real-time
+                                        notifications for web and mobile applications. Perfect for learning Django's
+                                        advanced features and real-time communication patterns.
+                                    </p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-list text-success me-2"></i>Key Features</h6>
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Real-time push notifications via WebSockets</li>
+                                        <li>Notification scheduling with Celery</li>
+                                        <li>User targeting and segmentation</li>
+                                        <li>Delivery tracking and analytics</li>
+                                        <li>Multiple notification channels (email, SMS, push)</li>
+                                        <li>Redis caching for performance optimization</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-code text-warning me-2"></i>Implementation</h6>
+                                    <p class="text-muted small mb-0">
+                                        Demonstrates best practices in Django development including async tasks,
+                                        WebSocket integration, and scalable architecture patterns.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">WebSockets</span>
+                                <span class="tech-tag">Celery</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+
+                            <div class="project-footer mt-3">
+                                <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                    <i class="fas fa-book-open me-1"></i>Read More
+                                </button>
+                                <a href="https://github.com/tahirhussainswe/django_projects" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fab fa-github me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Open Source Project 1 - REST API -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=REST+API+Demo" alt="RESTful API Demo" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="Open Source Project">
+                                        <i class="fas fa-code"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">RESTful API with Django REST Framework</h4>
+                            <span class="badge bg-success text-white mb-2">Open Source</span>
+
+                            <!-- Short description -->
+                            <p class="project-description project-description-short">
+                                Comprehensive REST API showcasing best practices with JWT authentication,
+                                pagination, filtering, and Swagger documentation.
+                            </p>
+
+                            <!-- Full description -->
+                            <div class="project-description-full" style="display: none;">
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-info-circle text-info me-2"></i>About</h6>
+                                    <p class="text-muted small mb-3">
+                                        A comprehensive REST API demonstrating industry-standard best practices
+                                        and patterns using Django REST Framework.
+                                    </p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-list text-primary me-2"></i>Features</h6>
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>JWT token-based authentication</li>
+                                        <li>RESTful CRUD operations with proper HTTP methods</li>
+                                        <li>Advanced filtering, searching, and ordering</li>
+                                        <li>Pagination for large datasets</li>
+                                        <li>Swagger/OpenAPI documentation</li>
+                                        <li>Request throttling and rate limiting</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-graduation-cap text-warning me-2"></i>Learning Goals</h6>
+                                    <p class="text-muted small mb-0">
+                                        Demonstrates API design principles, authentication patterns, and
+                                        documentation practices for production-ready APIs.
+                                    </p>
+                                </div>
+                            </div>
+
                             <div class="tech-stack">
                                 <span class="tech-tag">Django</span>
                                 <span class="tech-tag">DRF</span>
                                 <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">Celery</span>
-                            </div>
-                            <div class="project-footer">
-                                <a href="https://example.com/project1" target="_blank" class="btn btn-sm btn-outline-primary">
-                                    <i class="fab fa-github me-2"></i>View Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=Chat+Application" alt="Real-Time Chat API" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://example.com/project2" target="_blank" class="project-link" title="View on GitHub">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Real-Time Chat Application</h4>
-                            <p class="project-description">
-                                WebSocket-based real-time messaging system with FastAPI, supporting
-                                private and group conversations, message encryption, file sharing,
-                                and online presence tracking.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">WebSockets</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Redis</span>
                                 <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Swagger</span>
                             </div>
-                            <div class="project-footer">
-                                <a href="https://example.com/project2" target="_blank" class="btn btn-sm btn-outline-primary">
-                                    <i class="fab fa-github me-2"></i>View Code
+
+                            <div class="project-footer mt-3">
+                                <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                    <i class="fas fa-book-open me-1"></i>Read More
+                                </button>
+                                <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fab fa-github me-1"></i>View Code
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Open Source Project 2 - Task Manager -->
                 <div class="col-lg-4 col-md-6 fade-in-up">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Analytics+API" alt="Analytics Dashboard API" class="img-fluid">
+                            <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Task+Manager" alt="Task Management API" class="img-fluid">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="https://example.com/project3" target="_blank" class="project-link" title="View on GitHub">
-                                        <i class="fab fa-github"></i>
+                                    <a href="#" class="project-link" title="Open Source Project">
+                                        <i class="fas fa-code"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h4 class="project-title">Analytics Dashboard API</h4>
-                            <p class="project-description">
-                                High-performance analytics backend processing millions of events,
-                                providing real-time insights, data aggregation, and comprehensive
-                                reporting capabilities with optimized query performance.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">ClickHouse</span>
-                                <span class="tech-tag">Docker</span>
-                            </div>
-                            <div class="project-footer">
-                                <a href="https://example.com/project3" target="_blank" class="btn btn-sm btn-outline-primary">
-                                    <i class="fab fa-github me-2"></i>View Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <h4 class="project-title">Task Management System API</h4>
+                            <span class="badge bg-success text-white mb-2">Open Source</span>
 
-                <!-- Project 4 -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/f59e0b/ffffff?text=Microservices" alt="Microservices Architecture" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://example.com/project4" target="_blank" class="project-link" title="View on GitHub">
-                                        <i class="fab fa-github"></i>
-                                    </a>
+                            <!-- Short description -->
+                            <p class="project-description project-description-short">
+                                FastAPI task management system with real-time updates, async patterns,
+                                and WebSocket integration for team collaboration.
+                            </p>
+
+                            <!-- Full description -->
+                            <div class="project-description-full" style="display: none;">
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-info-circle text-info me-2"></i>About</h6>
+                                    <p class="text-muted small mb-3">
+                                        A modern task management API built with FastAPI showcasing async programming
+                                        and real-time communication patterns.
+                                    </p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-list text-primary me-2"></i>Features</h6>
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Real-time task updates via WebSockets</li>
+                                        <li>Priority-based task handling</li>
+                                        <li>Deadline tracking and notifications</li>
+                                        <li>Team collaboration with assignments</li>
+                                        <li>Task comments and activity history</li>
+                                        <li>Redis caching for performance</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-graduation-cap text-warning me-2"></i>Learning Goals</h6>
+                                    <p class="text-muted small mb-0">
+                                        Demonstrates async/await patterns, WebSocket communication,
+                                        and MongoDB integration with FastAPI.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Microservices Architecture Demo</h4>
-                            <p class="project-description">
-                                Distributed system demonstrating microservices patterns with
-                                service discovery, API gateway, message queues, and inter-service
-                                communication using RabbitMQ and gRPC.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">Flask</span>
-                                <span class="tech-tag">RabbitMQ</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Kubernetes</span>
-                            </div>
-                            <div class="project-footer">
-                                <a href="https://example.com/project4" target="_blank" class="btn btn-sm btn-outline-primary">
-                                    <i class="fab fa-github me-2"></i>View Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 5 -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/ef4444/ffffff?text=Auth+Service" alt="Authentication Service" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://example.com/project5" target="_blank" class="project-link" title="View on GitHub">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Secure Authentication Service</h4>
-                            <p class="project-description">
-                                Production-ready authentication microservice implementing JWT, OAuth2,
-                                two-factor authentication, role-based access control, and session
-                                management with security best practices.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">JWT</span>
-                                <span class="tech-tag">OAuth2</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                            </div>
-                            <div class="project-footer">
-                                <a href="https://example.com/project5" target="_blank" class="btn btn-sm btn-outline-primary">
-                                    <i class="fab fa-github me-2"></i>View Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/06b6d4/ffffff?text=Blog+CMS" alt="Blog CMS API" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://example.com/project6" target="_blank" class="project-link" title="View on GitHub">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Blog CMS API</h4>
-                            <p class="project-description">
-                                Content management system backend with rich text editing, media
-                                management, commenting system, SEO optimization, and role-based
-                                publishing workflow for multi-author blogs.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">ElasticSearch</span>
-                                <span class="tech-tag">S3</span>
-                            </div>
-                            <div class="project-footer">
-                                <a href="https://example.com/project6" target="_blank" class="btn btn-sm btn-outline-primary">
-                                    <i class="fab fa-github me-2"></i>View Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7 - Client Project -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/ec4899/ffffff?text=Healthcare+Platform" alt="Healthcare Management Platform" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <span class="badge bg-danger fs-6">Confidential</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Healthcare Management Platform</h4>
-                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
-                            <p class="project-description">
-                                Developed a comprehensive healthcare management system with patient records,
-                                appointment scheduling, billing integration, and real-time notifications.
-                                Handled sensitive medical data with HIPAA compliance.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">Celery</span>
-                                <span class="tech-tag">AWS</span>
-                            </div>
-                            <div class="project-footer">
-                                <span class="text-muted"><i class="fas fa-lock me-2"></i>Source Code Confidential</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 8 - Client Project -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/14b8a6/ffffff?text=FinTech+API" alt="Financial Services API" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <span class="badge bg-danger fs-6">Confidential</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Financial Services API</h4>
-                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
-                            <p class="project-description">
-                                Built a secure RESTful API for a fintech startup handling transactions,
-                                account management, and payment processing. Implemented robust security
-                                measures including encryption and fraud detection.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">JWT</span>
-                                <span class="tech-tag">Stripe</span>
-                                <span class="tech-tag">Docker</span>
-                            </div>
-                            <div class="project-footer">
-                                <span class="text-muted"><i class="fas fa-lock me-2"></i>Source Code Confidential</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 9 - Client Project -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/f97316/ffffff?text=LMS+Platform" alt="Learning Management System" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <span class="badge bg-danger fs-6">Confidential</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Enterprise Learning Management System</h4>
-                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
-                            <p class="project-description">
-                                Developed backend for an LMS supporting course management, student enrollment,
-                                progress tracking, assessments, and certificate generation for corporate training.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">DRF</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">S3</span>
-                            </div>
-                            <div class="project-footer">
-                                <span class="text-muted"><i class="fas fa-lock me-2"></i>Source Code Confidential</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 10 - Client Project -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/a855f7/ffffff?text=Logistics+System" alt="Logistics Management System" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <span class="badge bg-danger fs-6">Confidential</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Logistics & Fleet Management System</h4>
-                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
-                            <p class="project-description">
-                                Created a logistics platform with real-time tracking, route optimization,
-                                inventory management, and driver assignment system. Integrated with GPS
-                                and third-party shipping APIs.
-                            </p>
                             <div class="tech-stack">
                                 <span class="tech-tag">FastAPI</span>
                                 <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Redis</span>
                                 <span class="tech-tag">WebSockets</span>
-                                <span class="tech-tag">GraphQL</span>
-                            </div>
-                            <div class="project-footer">
-                                <span class="text-muted"><i class="fas fa-lock me-2"></i>Source Code Confidential</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 11 - Client Project -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/84cc16/ffffff?text=SaaS+Platform" alt="Multi-tenant SaaS Platform" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <span class="badge bg-danger fs-6">Confidential</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Multi-tenant SaaS Platform</h4>
-                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
-                            <p class="project-description">
-                                Architected and built a multi-tenant SaaS platform with tenant isolation,
-                                subscription management, usage tracking, and automated billing. Designed
-                                for scalability supporting thousands of tenants.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Celery</span>
-                                <span class="tech-tag">Kubernetes</span>
-                                <span class="tech-tag">Stripe</span>
-                            </div>
-                            <div class="project-footer">
-                                <span class="text-muted"><i class="fas fa-lock me-2"></i>Source Code Confidential</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 12 - Client Project -->
-                <div class="col-lg-4 col-md-6 fade-in-up">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://via.placeholder.com/400x300/0ea5e9/ffffff?text=Social+Media+API" alt="Social Media Platform API" class="img-fluid">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <span class="badge bg-danger fs-6">Confidential</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Social Media Platform Backend</h4>
-                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
-                            <p class="project-description">
-                                Developed backend infrastructure for a social networking platform including
-                                user profiles, posts, comments, likes, real-time messaging, and news feed
-                                algorithm. Optimized for high-traffic loads.
-                            </p>
-                            <div class="tech-stack">
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">PostgreSQL</span>
                                 <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">ElasticSearch</span>
-                                <span class="tech-tag">AWS</span>
                             </div>
-                            <div class="project-footer">
-                                <span class="text-muted"><i class="fas fa-lock me-2"></i>Source Code Confidential</span>
+
+                            <div class="project-footer mt-3">
+                                <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                    <i class="fas fa-book-open me-1"></i>Read More
+                                </button>
+                                <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fab fa-github me-1"></i>View Code
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div><!-- End githubProjects visible -->
 
-                <!-- Project 13 - OmniCMS -->
+            <!-- See More GitHub Projects Button -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-success btn-lg" id="seeMoreGithubBtn" onclick="toggleMoreGithubProjects()">
+                        <i class="fas fa-chevron-down me-2"></i>See More GitHub Projects
+                    </button>
+                </div>
+            </div>
+
+            <!-- Additional GitHub Projects (Hidden by default) -->
+            <div id="moreGithubProjects" style="display: none;">
+                <div class="row g-4 mt-2">
+                    <!-- Open Source Project 3 - Weather API -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/400x300/06b6d4/ffffff?text=Weather+API" alt="Weather API Service" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" title="Open Source Project">
+                                            <i class="fas fa-code"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Weather Data Aggregation API</h4>
+                                <span class="badge bg-success text-white mb-2">Open Source</span>
+
+                                <!-- Short description -->
+                                <p class="project-description project-description-short">
+                                    Weather API aggregating data from multiple sources with caching,
+                                    rate limiting, and location-based forecasts.
+                                </p>
+
+                                <!-- Full description -->
+                                <div class="project-description-full" style="display: none;">
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-cloud text-info me-2"></i>About</h6>
+                                        <p class="text-muted small mb-3">
+                                            A weather data aggregation service demonstrating third-party API integration
+                                            and intelligent caching strategies.
+                                        </p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-list text-primary me-2"></i>Features</h6>
+                                        <ul class="small text-muted ps-3 mb-3">
+                                            <li>Multi-source weather data aggregation</li>
+                                            <li>Location-based forecast retrieval</li>
+                                            <li>Redis caching for API responses</li>
+                                            <li>Rate limiting to prevent abuse</li>
+                                            <li>Celery for background data updates</li>
+                                            <li>RESTful API endpoints</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-graduation-cap text-warning me-2"></i>Learning Goals</h6>
+                                        <p class="text-muted small mb-0">
+                                            Demonstrates third-party API integration, caching strategies,
+                                            and background task processing.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Celery</span>
+                                    <span class="tech-tag">API Integration</span>
+                                </div>
+
+                                <div class="project-footer mt-3">
+                                    <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                    <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-sm btn-outline-success">
+                                        <i class="fab fa-github me-1"></i>View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- End row -->
+            </div><!-- End moreGithubProjects -->
+
+            <!-- ========================================
+                 CLIENT PROJECTS SECTION
+                 ======================================== -->
+            <div class="row mb-4 mt-5 pt-4">
+                <div class="col-12">
+                    <h3 class="section-subtitle text-gradient mb-2">
+                        <i class="fas fa-briefcase me-2"></i>Client Projects
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row g-4" id="clientProjects">
+
+                <!-- Project 1 - OmniCMS Client Project -->
                 <div class="col-lg-4 col-md-6 fade-in-up">
                     <div class="project-card">
                         <div class="project-image">
@@ -606,7 +534,376 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 2 - Healthcare Platform Client Project -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/ec4899/ffffff?text=Healthcare+Platform" alt="Healthcare Management Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <span class="badge bg-danger fs-6">Confidential</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Healthcare Management Platform</h4>
+                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
+
+                            <!-- Short description -->
+                            <p class="project-description project-description-short">
+                                Comprehensive healthcare management system with patient records, appointment scheduling,
+                                and HIPAA-compliant data handling for a major healthcare provider.
+                            </p>
+
+                            <!-- Full description -->
+                            <div class="project-description-full" style="display: none;">
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-hospital text-danger me-2"></i>Overview</h6>
+                                    <p class="text-muted small mb-3">
+                                        Developed a comprehensive healthcare management system for a major medical facility
+                                        handling sensitive patient data with strict HIPAA compliance requirements.
+                                    </p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-cog text-primary me-2"></i>Key Features</h6>
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Electronic Health Records (EHR) management</li>
+                                        <li>Appointment scheduling with calendar integration</li>
+                                        <li>Billing and insurance claims processing</li>
+                                        <li>Real-time notifications for appointments and prescriptions</li>
+                                        <li>Patient portal with secure messaging</li>
+                                        <li>Medical staff management and shift scheduling</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-shield-alt text-success me-2"></i>Security & Compliance</h6>
+                                    <p class="text-muted small mb-0">
+                                        HIPAA-compliant architecture with end-to-end encryption, audit logging,
+                                        role-based access control, and secure data storage on AWS infrastructure.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">DRF</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Celery</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+
+                            <div class="project-footer mt-3">
+                                <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                    <i class="fas fa-book-open me-1"></i>Read More
+                                </button>
+                                <span class="text-muted"><i class="fas fa-lock me-1"></i>Confidential</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - E-Commerce Platform Client Project -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=E-Commerce+Platform" alt="Enterprise E-Commerce Platform" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <span class="badge bg-danger fs-6">Confidential</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Enterprise E-Commerce Platform</h4>
+                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
+
+                            <!-- Short description -->
+                            <p class="project-description project-description-short">
+                                Scalable e-commerce backend for international retail handling high-traffic loads,
+                                multi-currency support, and payment processing for seasonal sales.
+                            </p>
+
+                            <!-- Full description -->
+                            <div class="project-description-full" style="display: none;">
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-shopping-cart text-success me-2"></i>Overview</h6>
+                                    <p class="text-muted small mb-3">
+                                        Built a scalable e-commerce backend for an international retail client capable of
+                                        handling millions of users during peak seasonal sales with zero downtime.
+                                    </p>
+                                </div>
+
+                                <div class="mb-3">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-cog text-primary me-2"></i>Key Features</h6>
+                                    <ul class="small text-muted ps-3 mb-3">
+                                        <li>Product catalog with advanced search and filtering</li>
+                                        <li>Real-time inventory management across warehouses</li>
+                                        <li>Order processing with automated fulfillment</li>
+                                        <li>Multi-currency and multi-language support</li>
+                                        <li>Payment gateway integration (Stripe, PayPal)</li>
+                                        <li>Shopping cart with session persistence</li>
+                                    </ul>
+                                </div>
+
+                                <div class="mb-2">
+                                    <h6 class="text-light fw-bold mb-2"><i class="fas fa-rocket text-warning me-2"></i>Performance</h6>
+                                    <p class="text-muted small mb-0">
+                                        Optimized for high-traffic loads with Redis caching, database sharding,
+                                        and Kubernetes auto-scaling. Handles 10K+ concurrent users.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
+
+                            <div class="project-footer mt-3">
+                                <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                    <i class="fas fa-book-open me-1"></i>Read More
+                                </button>
+                                <span class="text-muted"><i class="fas fa-lock me-1"></i>Confidential</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- End clientProjects visible -->
+
+            <!-- See More Client Projects Button -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-warning btn-lg" id="seeMoreClientBtn" onclick="toggleMoreClientProjects()">
+                        <i class="fas fa-chevron-down me-2"></i>See More Client Projects
+                    </button>
+                </div>
             </div>
+
+            <!-- Additional Client Projects (Hidden by default) -->
+            <div id="moreClientProjects" style="display: none;">
+                <div class="row g-4 mt-2">
+                    <!-- Client Project 5 - Financial Services -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/400x300/ef4444/ffffff?text=FinTech+Platform" alt="Financial Technology Platform" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <span class="badge bg-danger fs-6">Confidential</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Financial Services Platform</h4>
+                                <span class="badge bg-warning text-dark mb-2">Client Project</span>
+
+                                <!-- Short description -->
+                                <p class="project-description project-description-short">
+                                    Secure fintech backend with PCI DSS compliance, fraud detection,
+                                    and real-time transaction monitoring for a financial startup.
+                                </p>
+
+                                <!-- Full description -->
+                                <div class="project-description-full" style="display: none;">
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-dollar-sign text-success me-2"></i>Overview</h6>
+                                        <p class="text-muted small mb-3">
+                                            Built a secure financial services backend for a fintech startup handling
+                                            sensitive financial transactions with strict regulatory compliance.
+                                        </p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-cog text-primary me-2"></i>Key Features</h6>
+                                        <ul class="small text-muted ps-3 mb-3">
+                                            <li>Transaction processing and account management</li>
+                                            <li>Payment gateway integration (Stripe)</li>
+                                            <li>Real-time fraud detection algorithms</li>
+                                            <li>Automated transaction monitoring and alerts</li>
+                                            <li>Encrypted data storage and transmission</li>
+                                            <li>Audit logging for compliance</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-shield-alt text-danger me-2"></i>Security & Compliance</h6>
+                                        <p class="text-muted small mb-0">
+                                            PCI DSS compliant architecture with end-to-end encryption,
+                                            multi-factor authentication, and comprehensive security auditing.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="tech-stack">
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Stripe</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+
+                                <div class="project-footer mt-3">
+                                    <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                    <span class="text-muted"><i class="fas fa-lock me-1"></i>Confidential</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client Project 6 - Social Media Platform -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/400x300/0ea5e9/ffffff?text=Social+Platform" alt="Social Media Platform" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <span class="badge bg-danger fs-6">Confidential</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Social Media Platform Backend</h4>
+                                <span class="badge bg-warning text-dark mb-2">Client Project</span>
+
+                                <!-- Short description -->
+                                <p class="project-description project-description-short">
+                                    Social networking backend with real-time messaging, news feed algorithm,
+                                    and optimization for high-traffic loads.
+                                </p>
+
+                                <!-- Full description -->
+                                <div class="project-description-full" style="display: none;">
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-users text-info me-2"></i>Overview</h6>
+                                        <p class="text-muted small mb-3">
+                                            Developed backend infrastructure for a social networking platform
+                                            handling millions of daily active users.
+                                        </p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-cog text-primary me-2"></i>Key Features</h6>
+                                        <ul class="small text-muted ps-3 mb-3">
+                                            <li>User profiles and authentication</li>
+                                            <li>Post creation, likes, and comments</li>
+                                            <li>Real-time messaging with WebSockets</li>
+                                            <li>Personalized news feed algorithm</li>
+                                            <li>Full-text search with Elasticsearch</li>
+                                            <li>Media upload and processing</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-rocket text-warning me-2"></i>Performance</h6>
+                                        <p class="text-muted small mb-0">
+                                            Optimized for high-traffic loads with Redis caching, database sharding,
+                                            and CDN integration for media delivery.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Elasticsearch</span>
+                                    <span class="tech-tag">AWS</span>
+                                </div>
+
+                                <div class="project-footer mt-3">
+                                    <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                    <span class="text-muted"><i class="fas fa-lock me-1"></i>Confidential</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client Project 7 - Logistics System -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://via.placeholder.com/400x300/a855f7/ffffff?text=Logistics+System" alt="Logistics Management" class="img-fluid">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <span class="badge bg-danger fs-6">Confidential</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Logistics & Fleet Management System</h4>
+                                <span class="badge bg-warning text-dark mb-2">Client Project</span>
+
+                                <!-- Short description -->
+                                <p class="project-description project-description-short">
+                                    Comprehensive logistics platform with GPS tracking, route optimization,
+                                    and IoT integration for fleet management.
+                                </p>
+
+                                <!-- Full description -->
+                                <div class="project-description-full" style="display: none;">
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-truck text-purple me-2"></i>Overview</h6>
+                                        <p class="text-muted small mb-3">
+                                            Created a comprehensive logistics platform for a transportation company
+                                            managing hundreds of vehicles and daily deliveries.
+                                        </p>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-cog text-primary me-2"></i>Key Features</h6>
+                                        <ul class="small text-muted ps-3 mb-3">
+                                            <li>Real-time GPS tracking and mapping</li>
+                                            <li>AI-powered route optimization</li>
+                                            <li>Inventory management across warehouses</li>
+                                            <li>Driver assignment and scheduling</li>
+                                            <li>Delivery status notifications</li>
+                                            <li>IoT device integration for vehicle monitoring</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <h6 class="text-light fw-bold mb-2"><i class="fas fa-chart-line text-success me-2"></i>Technology</h6>
+                                        <p class="text-muted small mb-0">
+                                            Built with FastAPI and MongoDB for scalability, GraphQL for flexible queries,
+                                            and WebSockets for real-time tracking updates.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="tech-stack">
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">WebSockets</span>
+                                    <span class="tech-tag">GraphQL</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+
+                                <div class="project-footer mt-3">
+                                    <button class="btn btn-sm btn-outline-primary read-more-btn me-2" onclick="toggleReadMore(this)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                    <span class="text-muted"><i class="fas fa-lock me-1"></i>Confidential</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div><!-- End row -->
+            </div><!-- End moreClientProjects -->
 
             <!-- Call to Action -->
             <div class="row mt-5">

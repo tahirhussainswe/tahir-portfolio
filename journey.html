@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Journey - Behind the scenes of Muhammad Tahir Hussain's development career and workspace.">
+    <meta name="keywords" content="Professional Journey, Developer Life, Career Updates, Muhammad Tahir Hussain">
+    <title>Professional Journey - Muhammad Tahir Hussain</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/journey.html">
+    <meta property="og:title" content="Professional Journey - Muhammad Tahir Hussain">
+    <meta property="og:description" content="Behind the scenes of my development career and workspace.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/journey.html">
+    <meta property="twitter:title" content="Professional Journey - Muhammad Tahir Hussain">
+    <meta property="twitter:description" content="Behind the scenes of my development career and workspace.">
+    <meta property="twitter:image" content="https://yourdomain.com/images/og-image.jpg">
+    <meta name="twitter:creator" content="@tahirnekukara">
+    <meta name="twitter:site" content="@tahirnekukara">
+
+    <!-- Social Media Links -->
+    <meta property="og:see_also" content="https://www.facebook.com/tahirnekukara">
+    <meta property="og:see_also" content="https://www.twitter.com/tahirnekukara">
+    <meta property="og:see_also" content="https://www.instagram.com/tahirnekukara">
+
+    <!-- Profile Metadata -->
+    <meta property="profile:first_name" content="Muhammad Tahir">
+    <meta property="profile:last_name" content="Hussain">
+    <meta property="profile:username" content="tahirnekukara">
+
+    <!-- Social Profiles for Search Engines -->
+    <link rel="me" href="https://www.facebook.com/tahirnekukara">
+    <link rel="me" href="https://www.twitter.com/tahirnekukara">
+    <link rel="me" href="https://www.instagram.com/tahirnekukara">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-name">MTH</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="journey.html">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Journey Hero Section -->
+    <section class="page-header d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center fade-in">
+                    <h1 class="display-4 fw-bold">Professional Journey</h1>
+                    <p class="lead">Behind the scenes of my development career and workspace</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey-section py-5">
+        <div class="container">
+            <!-- Section Header with Filters -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <!-- Filter Buttons -->
+                        <div class="filter-buttons">
+                            <button class="btn btn-sm btn-outline-primary active" data-filter="all">All</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="meeting">Meetings</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="team">Team</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="achievement">Achievements</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="learning">Learnings</button>
+                        </div>
+
+                        <!-- Search Box -->
+                        <div class="search-box">
+                            <input type="text" class="form-control" id="journeySearch" placeholder="Search posts...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journey Posts Feed (Social Media Wall Style) -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div id="journeyPostsFeed">
+
+                        <!-- Post 1 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="meeting">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80" alt="CEO Strategy Meeting" class="img-fluid">
+                            <div class="image-count-badge">
+                                <i class="fas fa-images"></i> +3 photos
+                            </div>
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(1)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-primary">Meeting</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 25, 2025</span>
+                            </div>
+                            <h4 class="journey-title">CEO Strategy Session - Q4 Planning</h4>
+                            <p class="journey-description">
+                                Today we had an incredible strategy meeting with the CEO discussing our Q4 roadmap.
+                                We brainstormed new features, reviewed current progress, and aligned on priorities for the upcoming quarter.
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(1)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 2 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="achievement">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80" alt="Successful Deployment" class="img-fluid">
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(2)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-success">Achievement</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 22, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Successfully Deployed Multi-CMS Integration</h4>
+                            <p class="journey-description">
+                                A major milestone! Successfully deployed the OmniCMS platform with 10+ CMS integrations.
+                                Zero downtime, smooth rollout, and positive client feedback. Team celebration afterwards!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(2)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 3 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="team">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80" alt="Team Brainstorming" class="img-fluid">
+                            <div class="image-count-badge">
+                                <i class="fas fa-images"></i> +2 photos
+                            </div>
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(3)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-info">Team Collaboration</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 20, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Architecture Design Discussion with Team</h4>
+                            <p class="journey-description">
+                                Spent the afternoon with the development team discussing the architecture for our new microservices implementation.
+                                Great ideas from everyone, lots of whiteboard sketching, and solid consensus on the approach.
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(3)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 4 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="learning">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Code Review Session" class="img-fluid">
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(4)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-warning text-dark">Learning</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 18, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Code Review Best Practices Session</h4>
+                            <p class="journey-description">
+                                Led a knowledge-sharing session on code review best practices. Discussed clean code principles,
+                                security considerations, and how to give constructive feedback. Great engagement from the team!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(4)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 5 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="team">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80" alt="Team Celebration" class="img-fluid">
+                            <div class="image-count-badge">
+                                <i class="fas fa-images"></i> +4 photos
+                            </div>
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(5)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-info">Team Collaboration</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 15, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Team Celebration - Project Milestone</h4>
+                            <p class="journey-description">
+                                After months of hard work, we finally hit a major project milestone! The team celebrated with lunch together.
+                                Great food, great conversations, and even better teamwork. Proud of everyone's contributions!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(5)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                    </div><!-- End journeyPostsFeed visible posts -->
+
+                    <!-- See More Posts Button -->
+                    <div class="text-center mt-4" id="seeMoreJourneyBtnContainer">
+                        <button class="btn btn-outline-primary btn-lg" id="seeMoreJourneyBtn" onclick="toggleMoreJourneyPosts()">
+                            <i class="fas fa-chevron-down me-2"></i>See More Posts
+                        </button>
+                    </div>
+
+                    <!-- Additional Journey Posts (Hidden by default) -->
+                    <div id="moreJourneyPosts" style="display: none;">
+
+                        <!-- Post 6 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="achievement">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Performance Results" class="img-fluid">
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(6)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-success">Achievement</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 12, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Optimized API Response Time by 60%</h4>
+                            <p class="journey-description">
+                                After analyzing bottlenecks and implementing caching strategies with Redis, we reduced API response time from
+                                500ms to 200ms. Client noticed the improvement immediately. Performance optimization pays off!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(6)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 7 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="meeting">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80" alt="Client Presentation" class="img-fluid">
+                            <div class="image-count-badge">
+                                <i class="fas fa-images"></i> +3 photos
+                            </div>
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(7)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-primary">Meeting</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 10, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Client Presentation - New Feature Demo</h4>
+                            <p class="journey-description">
+                                Presented our latest features to the client today. The demo went smoothly and they were
+                                impressed with the progress. Received approval to proceed with Phase 2 of the project!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(7)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 8 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="learning">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1000&q=80" alt="Technology Workshop" class="img-fluid">
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(8)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-warning text-dark">Learning</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 8, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Attended Docker & Kubernetes Workshop</h4>
+                            <p class="journey-description">
+                                Great day learning advanced container orchestration techniques. Workshop covered scaling strategies,
+                                service mesh, and monitoring. Ready to apply these concepts to our infrastructure!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(8)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 9 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="team">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80" alt="Office Hackathon" class="img-fluid">
+                            <div class="image-count-badge">
+                                <i class="fas fa-images"></i> +5 photos
+                            </div>
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(9)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-info">Team Collaboration</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 5, 2025</span>
+                            </div>
+                            <h4 class="journey-title">24-Hour Internal Hackathon Challenge</h4>
+                            <p class="journey-description">
+                                Participated in the company hackathon! Our team built a real-time collaboration tool in 24 hours.
+                                Amazing energy, creativity, and teamwork. We didn't win, but learned a ton and had a blast!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(9)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 10 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="achievement">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Critical Bug Fixed" class="img-fluid">
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(10)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-success">Achievement</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 3, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Solved Critical Production Bug</h4>
+                            <p class="journey-description">
+                                After 6 hours of debugging, finally found and fixed a critical race condition in production.
+                                The satisfaction when the fix works perfectly! Sometimes debugging is like detective work.
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(10)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- Post 11 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="meeting">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80" alt="Sprint Planning Meeting" class="img-fluid">
+                            <div class="image-count-badge">
+                                <i class="fas fa-images"></i> +2 photos
+                            </div>
+                            <div class="journey-overlay">
+                                <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(11)">
+                                    <i class="fas fa-eye me-1"></i>View Post
+                                </button>
+                            </div>
+                        </div>
+                        <div class="journey-content">
+                            <div class="journey-meta">
+                                <span class="badge bg-primary">Meeting</span>
+                                <span class="journey-date"><i class="far fa-calendar"></i> Nov 1, 2025</span>
+                            </div>
+                            <h4 class="journey-title">Sprint Planning - Q4 Feature Roadmap</h4>
+                            <p class="journey-description">
+                                Kicked off the new sprint with detailed planning session. Broke down user stories, estimated tasks,
+                                and assigned responsibilities. Team is aligned and excited for the upcoming features!
+                            </p>
+                            <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(11)">
+                                <i class="fas fa-book-open me-1"></i>Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                    </div><!-- End moreJourneyPosts -->
+
+                </div><!-- End col-lg-8 -->
+            </div><!-- End row -->
+
+        </div>
+    </section>
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="postModalLabel">Post Title</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="postModalBody">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Lightbox Modal -->
+    <div class="modal fade" id="imageLightbox" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <span class="text-light" id="imageCounter">1 of 4</span>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center position-relative">
+                    <button class="btn btn-light position-absolute start-0 ms-3" id="prevImageBtn" style="z-index: 10;">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <img src="" alt="Gallery Image" class="img-fluid" id="lightboxImage" style="max-height: 80vh;">
+                    <button class="btn btn-light position-absolute end-0 me-3" id="nextImageBtn" style="z-index: 10;">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <div id="thumbnailContainer" class="d-flex gap-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Muhammad Tahir Hussain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Journey Page Specific JS -->
+    <script>
+        // Sample post data with images
+        const journeyPosts = {
+            1: {
+                title: "CEO Strategy Session - Q4 Planning",
+                category: "Meeting",
+                date: "Nov 25, 2025",
+                fullDescription: `
+                    <p>Today was an incredibly productive day! We had our quarterly strategy meeting with the CEO and leadership team to plan our Q4 roadmap and discuss the company's direction for 2026.</p>
+
+                    <p>The meeting started with a review of Q3 achievements, where we celebrated hitting all our major milestones. Then we dove into the exciting part - planning new features and initiatives for Q4.</p>
+
+                    <p>Key discussion points included:</p>
+                    <ul>
+                        <li>Expanding our CMS integration platform to support 5 more platforms</li>
+                        <li>Implementing AI-powered content recommendations</li>
+                        <li>Improving our API performance and scalability</li>
+                        <li>Building out the mobile application</li>
+                    </ul>
+
+                    <p>What impressed me most was how everyone contributed ideas and the collaborative atmosphere. We spent hours at the whiteboard mapping out the technical architecture for the new features.</p>
+
+                    <p>Looking forward to executing on these exciting plans! The team is energized and ready to make Q4 our best quarter yet.</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80", caption: "CEO presenting Q4 roadmap" },
+                    { url: "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1000&q=80", caption: "Whiteboard brainstorming session" },
+                    { url: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80", caption: "Team discussing architecture" },
+                    { url: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80", caption: "Full team after the meeting" }
+                ]
+            },
+            2: {
+                title: "Successfully Deployed Multi-CMS Integration",
+                category: "Achievement",
+                date: "Nov 22, 2025",
+                fullDescription: `
+                    <p>This was a huge day for our team! After months of development, testing, and refinement, we successfully deployed the OmniCMS platform with support for 10+ CMS integrations.</p>
+
+                    <p>The deployment went incredibly smooth - zero downtime, all integrations working perfectly, and the client was thrilled with the results. This project represents countless hours of hard work from every team member.</p>
+
+                    <p>Some highlights from this achievement:</p>
+                    <ul>
+                        <li>Deployed to production with zero issues</li>
+                        <li>All 10+ CMS integrations passed connection tests</li>
+                        <li>API response times under 200ms</li>
+                        <li>Client gave immediate positive feedback</li>
+                        <li>Team celebrated with dinner afterwards</li>
+                    </ul>
+
+                    <p>This project taught us so much about building scalable, maintainable integrations and working with diverse third-party APIs. The versioned plugin architecture we built is something I'm particularly proud of.</p>
+
+                    <p>Grateful to work with such a talented team. On to the next challenge! 🚀</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80", caption: "Successful deployment dashboard" }
+                ]
+            },
+            3: {
+                title: "Architecture Design Discussion with Team",
+                category: "Team Collaboration",
+                date: "Nov 20, 2025",
+                fullDescription: `
+                    <p>Spent a fantastic afternoon with the development team diving deep into the architecture design for our upcoming microservices implementation.</p>
+
+                    <p>We started by reviewing our current monolithic architecture and identifying pain points. Then we brainstormed different approaches to breaking it down into smaller, more manageable services.</p>
+
+                    <p>The whiteboard session was intense and productive. We mapped out:</p>
+                    <ul>
+                        <li>Service boundaries and responsibilities</li>
+                        <li>Communication patterns (REST vs message queues)</li>
+                        <li>Data storage strategies for each service</li>
+                        <li>Authentication and authorization flow</li>
+                        <li>Deployment and scaling considerations</li>
+                    </ul>
+
+                    <p>What I loved most was how everyone contributed. Our junior developers asked great questions, and our senior engineers shared their experiences from past projects. True collaboration!</p>
+
+                    <p>We ended the session with a solid consensus on the approach and clear action items for each team member. Can't wait to start implementing this architecture!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80", caption: "Team gathered around whiteboard" },
+                    { url: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80", caption: "Architecture diagram on whiteboard" },
+                    { url: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80", caption: "Discussing technical details" }
+                ]
+            },
+            4: {
+                title: "Code Review Best Practices Session",
+                category: "Learning",
+                date: "Nov 18, 2025",
+                fullDescription: `
+                    <p>Led a knowledge-sharing session today on code review best practices. This was something the team had been asking for, and I was excited to facilitate the discussion.</p>
+
+                    <p>We covered several important topics:</p>
+                    <ul>
+                        <li><strong>Clean Code Principles:</strong> Readability, maintainability, and following language conventions</li>
+                        <li><strong>Security Considerations:</strong> Common vulnerabilities to watch for (SQL injection, XSS, authentication issues)</li>
+                        <li><strong>Performance Patterns:</strong> Database queries, caching strategies, algorithm efficiency</li>
+                        <li><strong>Giving Feedback:</strong> How to be constructive, specific, and helpful in code reviews</li>
+                        <li><strong>Review Checklist:</strong> What to look for in every PR</li>
+                    </ul>
+
+                    <p>The team was highly engaged with lots of great questions and discussions. We reviewed real examples from our codebase, which made the concepts concrete and immediately applicable.</p>
+
+                    <p>Several developers mentioned they learned new things they'll apply right away. That's the goal - continuous learning and improvement as a team!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80", caption: "Presenting code review guidelines" }
+                ]
+            },
+            5: {
+                title: "Team Celebration - Project Milestone",
+                category: "Team Collaboration",
+                date: "Nov 15, 2025",
+                fullDescription: `
+                    <p>After months of intensive work, we finally hit a major project milestone and decided to celebrate as a team with lunch together!</p>
+
+                    <p>The celebration was well-deserved. This project pushed us all to grow and improve our skills. We faced numerous challenges along the way - technical hurdles, tight deadlines, changing requirements - but the team persevered through it all.</p>
+
+                    <p>What made this milestone special:</p>
+                    <ul>
+                        <li>Delivered on time despite complexity</li>
+                        <li>Every team member contributed significantly</li>
+                        <li>Client was extremely satisfied with the results</li>
+                        <li>We learned so many new technologies and patterns</li>
+                        <li>The team bond grew stronger through collaboration</li>
+                    </ul>
+
+                    <p>The lunch was filled with laughter, stories about the project's challenges, and appreciation for each other's work. These moments remind me why I love being part of a team.</p>
+
+                    <p>It's not just about the code we write - it's about the relationships we build and the journey we take together. Grateful for this amazing team! 🎉</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80", caption: "Team enjoying lunch together" },
+                    { url: "https://images.unsplash.com/photo-1530099486328-e021101a494a?auto=format&fit=crop&w=1000&q=80", caption: "Celebrating the milestone" },
+                    { url: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1000&q=80", caption: "Group photo - part 1" },
+                    { url: "https://images.unsplash.com/photo-1527525443983-6e60c75fff46?auto=format&fit=crop&w=1000&q=80", caption: "Group photo - part 2" },
+                    { url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80", caption: "Back at the office" }
+                ]
+            },
+            6: {
+                title: "Optimized API Response Time by 60%",
+                category: "Achievement",
+                date: "Nov 12, 2025",
+                fullDescription: `
+                    <p>Achieved a significant performance milestone today! After careful analysis and optimization, we reduced our API response time from 500ms to 200ms - a 60% improvement!</p>
+
+                    <p>The optimization journey involved several steps:</p>
+
+                    <h6>Analysis Phase:</h6>
+                    <ul>
+                        <li>Used profiling tools to identify bottlenecks</li>
+                        <li>Analyzed database query patterns</li>
+                        <li>Reviewed API endpoint usage statistics</li>
+                        <li>Identified N+1 query problems</li>
+                    </ul>
+
+                    <h6>Implementation Phase:</h6>
+                    <ul>
+                        <li>Implemented Redis caching for frequently accessed data</li>
+                        <li>Optimized database queries with proper indexing</li>
+                        <li>Added database query result caching</li>
+                        <li>Implemented connection pooling</li>
+                        <li>Reduced unnecessary API calls between services</li>
+                    </ul>
+
+                    <p>The results were immediate and impressive. The client noticed the performance improvement right away and sent positive feedback. User experience improved significantly, especially for data-heavy operations.</p>
+
+                    <p>This project reinforced the importance of profiling before optimizing and measuring results. Performance optimization is both an art and a science! 🚀</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80", caption: "Before and after performance metrics" }
+                ]
+            },
+            7: {
+                title: "Client Presentation - New Feature Demo",
+                category: "Meeting",
+                date: "Nov 10, 2025",
+                fullDescription: `
+                    <p>Today was an important day - presenting our latest features to the client! We spent the last few weeks preparing for this demo, and all the hard work paid off.</p>
+
+                    <p>The presentation covered:</p>
+                    <ul>
+                        <li>New dashboard with real-time analytics</li>
+                        <li>Enhanced search functionality with filters</li>
+                        <li>Mobile-responsive design improvements</li>
+                        <li>API performance enhancements</li>
+                        <li>Security updates and compliance features</li>
+                    </ul>
+
+                    <p>The demo went incredibly smooth. The client was impressed with the progress and particularly loved the new analytics dashboard. They asked great questions and provided valuable feedback.</p>
+
+                    <p>Best news: We received approval to proceed with Phase 2 of the project! This means more exciting features to build and more opportunities for the team to shine.</p>
+
+                    <p>These client presentations can be nerve-wracking, but they're also incredibly rewarding when they go well. Our preparation and teamwork made all the difference!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80", caption: "Presenting to the client" },
+                    { url: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=80", caption: "Demo of new features" },
+                    { url: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1000&q=80", caption: "Q&A discussion with client" },
+                    { url: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1000&q=80", caption: "Team photo after successful demo" }
+                ]
+            },
+            8: {
+                title: "Attended Docker & Kubernetes Workshop",
+                category: "Learning",
+                date: "Nov 8, 2025",
+                fullDescription: `
+                    <p>Spent the entire day at an advanced Docker and Kubernetes workshop. It was intensive, hands-on, and incredibly valuable!</p>
+
+                    <p>Topics covered:</p>
+                    <ul>
+                        <li><strong>Container Orchestration:</strong> Deep dive into Kubernetes architecture and components</li>
+                        <li><strong>Scaling Strategies:</strong> Horizontal pod autoscaling and cluster autoscaling</li>
+                        <li><strong>Service Mesh:</strong> Introduction to Istio for traffic management and security</li>
+                        <li><strong>Monitoring & Logging:</strong> Prometheus, Grafana, and ELK stack integration</li>
+                        <li><strong>CI/CD Pipelines:</strong> GitOps workflow with ArgoCD</li>
+                        <li><strong>Security Best Practices:</strong> Pod security policies and network policies</li>
+                    </ul>
+
+                    <p>The workshop included several hands-on labs where we deployed applications, configured auto-scaling, implemented blue-green deployments, and set up monitoring dashboards.</p>
+
+                    <p>I'm excited to apply these concepts to our infrastructure! We've been discussing moving to Kubernetes for better scalability, and this workshop gave me the confidence and knowledge to lead that migration.</p>
+
+                    <p>Continuous learning is essential in this field. Technologies evolve fast, and workshops like this keep us sharp and up-to-date with industry best practices.</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1000&q=80", caption: "Workshop presentation" }
+                ]
+            },
+            9: {
+                title: "24-Hour Internal Hackathon Challenge",
+                category: "Team Collaboration",
+                date: "Nov 5, 2025",
+                fullDescription: `
+                    <p>What an incredible 24 hours! Our company hosted an internal hackathon, and it was one of the most fun and challenging experiences I've had at work.</p>
+
+                    <p>Our team decided to build a real-time collaboration tool - think of it as a hybrid between Slack and Google Docs with live code sharing capabilities.</p>
+
+                    <h6>What we built:</h6>
+                    <ul>
+                        <li>WebSocket-based real-time messaging</li>
+                        <li>Collaborative code editor with syntax highlighting</li>
+                        <li>Screen sharing functionality</li>
+                        <li>Project management board</li>
+                        <li>Voice chat integration</li>
+                    </ul>
+
+                    <p>The energy throughout the 24 hours was amazing. Pizza at midnight, debugging sessions at 3 AM, the rush of getting features working just in time - it was intense but so much fun!</p>
+
+                    <p>We didn't win first place, but we learned a TON. We experimented with WebRTC, tried new frameworks, and worked together under pressure. The winning team deserved it - they built an impressive AI-powered customer support bot.</p>
+
+                    <p>These hackathons remind me why I love software development. The creativity, the problem-solving, the teamwork, and the joy of building something from scratch in a short time. Can't wait for the next one!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80", caption: "Kickoff - team brainstorming" },
+                    { url: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1000&q=80", caption: "Midnight coding session" },
+                    { url: "https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=1000&q=80", caption: "Presenting our project" },
+                    { url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80", caption: "Exhausted but happy team" },
+                    { url: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1000&q=80", caption: "Winners announcement ceremony" },
+                    { url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1000&q=80", caption: "Team celebrating participation" }
+                ]
+            },
+            10: {
+                title: "Solved Critical Production Bug",
+                category: "Achievement",
+                date: "Nov 3, 2025",
+                fullDescription: `
+                    <p>Today was intense. We discovered a critical bug in production that was causing intermittent failures for some users. The pressure was on to find and fix it quickly.</p>
+
+                    <h6>The Problem:</h6>
+                    <p>Users were reporting that their sessions were randomly timing out, and data wasn't saving properly. The issue was intermittent, which made it especially challenging to reproduce and debug.</p>
+
+                    <h6>The Investigation:</h6>
+                    <ul>
+                        <li>Analyzed server logs and error reports</li>
+                        <li>Set up detailed monitoring and tracing</li>
+                        <li>Reproduced the issue in staging environment</li>
+                        <li>Narrowed down the problem to a race condition</li>
+                        <li>Found the culprit: concurrent database updates without proper locking</li>
+                    </ul>
+
+                    <h6>The Solution:</h6>
+                    <p>Implemented database-level row locking and optimistic concurrency control using version numbers. Also added retry logic with exponential backoff for transaction failures.</p>
+
+                    <p>After 6 hours of intense debugging, testing, and code review, we deployed the fix. Monitoring confirmed the issue was resolved - no more random failures!</p>
+
+                    <p>The satisfaction when you finally solve a tough bug is unmatched. It's like being a detective piecing together clues. These challenging moments are what make us better developers.</p>
+
+                    <p>Also learned valuable lessons about concurrent programming and the importance of comprehensive testing for race conditions.</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80", caption: "Debugging in action" }
+                ]
+            },
+            11: {
+                title: "Sprint Planning - Q4 Feature Roadmap",
+                category: "Meeting",
+                date: "Nov 1, 2025",
+                fullDescription: `
+                    <p>Started the new sprint with our detailed planning session! This is one of my favorite parts of our agile process - aligning the team and setting clear goals for the upcoming weeks.</p>
+
+                    <h6>Sprint Goals:</h6>
+                    <ul>
+                        <li>Implement user authentication with OAuth 2.0</li>
+                        <li>Build notification system (email + push)</li>
+                        <li>Create admin dashboard for analytics</li>
+                        <li>Optimize database queries for reports</li>
+                        <li>Update documentation and API specs</li>
+                    </ul>
+
+                    <h6>Planning Process:</h6>
+                    <p>We started with a retrospective of the previous sprint - what went well, what could be improved. Then we reviewed the product backlog and prioritized features based on business value and technical dependencies.</p>
+
+                    <p>For each user story, we:</p>
+                    <ul>
+                        <li>Clarified requirements and acceptance criteria</li>
+                        <li>Broke down into smaller technical tasks</li>
+                        <li>Estimated story points using planning poker</li>
+                        <li>Identified potential blockers and risks</li>
+                        <li>Assigned ownership and paired developers for complex tasks</li>
+                    </ul>
+
+                    <p>What I love about these sessions is the collaborative nature. Everyone contributes their perspective - frontend, backend, QA, and product. We make better decisions as a team than we ever could individually.</p>
+
+                    <p>Team is energized and aligned. Let's make this sprint count! 🚀</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80", caption: "Team during sprint planning" },
+                    { url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80", caption: "User stories on the board" },
+                    { url: "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?auto=format&fit=crop&w=1000&q=80", caption: "Team aligned and ready" }
+                ]
+            }
+        };
+
+        // Open post modal with full details
+        function openPostModal(postId) {
+            const post = journeyPosts[postId];
+            if (!post) return;
+
+            const modalTitle = document.getElementById('postModalLabel');
+            const modalBody = document.getElementById('postModalBody');
+
+            modalTitle.textContent = post.title;
+
+            let imagesHTML = '';
+            if (post.images.length > 1) {
+                imagesHTML = `
+                    <div class="row g-2 mb-3">
+                        ${post.images.map((img, index) => `
+                            <div class="col-6">
+                                <img src="${img.url}" alt="${img.caption}" class="img-fluid rounded cursor-pointer"
+                                     onclick="openImageLightbox(${postId}, ${index})"
+                                     style="cursor: pointer; width: 100%; height: 200px; object-fit: cover;">
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } else {
+                imagesHTML = `
+                    <img src="${post.images[0].url}" alt="${post.images[0].caption}" class="img-fluid rounded mb-3">
+                `;
+            }
+
+            modalBody.innerHTML = `
+                <div class="mb-2">
+                    <span class="badge bg-primary me-2">${post.category}</span>
+                    <span class="text-muted"><i class="far fa-calendar me-1"></i>${post.date}</span>
+                </div>
+                ${imagesHTML}
+                <div class="post-full-content">
+                    ${post.fullDescription}
+                </div>
+            `;
+
+            const modal = new bootstrap.Modal(document.getElementById('postModal'));
+            modal.show();
+        }
+
+        // Open image lightbox
+        let currentPostId = null;
+        let currentImageIndex = 0;
+
+        function openImageLightbox(postId, imageIndex) {
+            currentPostId = postId;
+            currentImageIndex = imageIndex;
+            updateLightboxImage();
+
+            const modal = new bootstrap.Modal(document.getElementById('imageLightbox'));
+            modal.show();
+        }
+
+        function updateLightboxImage() {
+            const post = journeyPosts[currentPostId];
+            if (!post) return;
+
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+            const thumbnailContainer = document.getElementById('thumbnailContainer');
+
+            lightboxImage.src = post.images[currentImageIndex].url;
+            lightboxImage.alt = post.images[currentImageIndex].caption;
+            imageCounter.textContent = `${currentImageIndex + 1} of ${post.images.length}`;
+
+            // Update thumbnails
+            thumbnailContainer.innerHTML = post.images.map((img, index) => `
+                <img src="${img.url}" alt="${img.caption}"
+                     class="img-thumbnail ${index === currentImageIndex ? 'border-primary' : ''}"
+                     style="width: 80px; height: 60px; object-fit: cover; cursor: pointer;"
+                     onclick="currentImageIndex = ${index}; updateLightboxImage();">
+            `).join('');
+        }
+
+        document.getElementById('prevImageBtn').addEventListener('click', () => {
+            const post = journeyPosts[currentPostId];
+            if (!post) return;
+            currentImageIndex = (currentImageIndex - 1 + post.images.length) % post.images.length;
+            updateLightboxImage();
+        });
+
+        document.getElementById('nextImageBtn').addEventListener('click', () => {
+            const post = journeyPosts[currentPostId];
+            if (!post) return;
+            currentImageIndex = (currentImageIndex + 1) % post.images.length;
+            updateLightboxImage();
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-buttons .btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active state
+                document.querySelectorAll('.filter-buttons .btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+                const posts = document.querySelectorAll('.journey-post');
+
+                posts.forEach(post => {
+                    if (filter === 'all' || post.getAttribute('data-category') === filter) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        document.getElementById('journeySearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const posts = document.querySelectorAll('.journey-post');
+
+            posts.forEach(post => {
+                const title = post.querySelector('.journey-title').textContent.toLowerCase();
+                const description = post.querySelector('.journey-description').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        });
+
+        // Toggle More Journey Posts functionality
+        function toggleMoreJourneyPosts() {
+            const morePostsDiv = document.getElementById('moreJourneyPosts');
+            const seeMoreBtn = document.getElementById('seeMoreJourneyBtn');
+
+            if (!morePostsDiv || !seeMoreBtn) return;
+
+            const icon = seeMoreBtn.querySelector('i');
+
+            if (morePostsDiv.style.display === 'none' || morePostsDiv.style.display === '') {
+                // Show more posts
+                morePostsDiv.style.display = 'block';
+                icon.className = 'fas fa-chevron-up me-2';
+                seeMoreBtn.innerHTML = '<i class="fas fa-chevron-up me-2"></i>See Less Posts';
+
+                // Smooth scroll to more posts section
+                setTimeout(() => {
+                    morePostsDiv.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest'
+                    });
+                }, 100);
+            } else {
+                // Hide more posts
+                morePostsDiv.style.display = 'none';
+                icon.className = 'fas fa-chevron-down me-2';
+                seeMoreBtn.innerHTML = '<i class="fas fa-chevron-down me-2"></i>See More Posts';
+
+                // Scroll back to the button
+                setTimeout(() => {
+                    document.getElementById('seeMoreJourneyBtnContainer').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>

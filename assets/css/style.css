@@ -342,6 +342,13 @@ html {
     background-clip: text;
 }
 
+.section-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 .skill-card {
     background: var(--card-bg);
     padding: 2rem;
@@ -914,7 +921,7 @@ html {
 }
 
 .project-description-full {
-    color: var(--gray-text);
+    color: #cbd5e1;
     font-size: 0.9rem;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -938,6 +945,7 @@ html {
 .project-description-full h6 {
     font-size: 0.95rem;
     margin-bottom: 0.75rem;
+    color: var(--light-text) !important;
 }
 
 .project-description-full ul {
@@ -947,6 +955,26 @@ html {
 .project-description-full li {
     margin-bottom: 0.5rem;
     line-height: 1.6;
+    color: #cbd5e1 !important;
+}
+
+.project-description-full p {
+    color: #cbd5e1 !important;
+}
+
+/* Override Bootstrap's text-muted class in project descriptions for better visibility */
+.project-description-full .text-muted {
+    color: #cbd5e1 !important;
+}
+
+.project-description-full .small {
+    color: #cbd5e1 !important;
+}
+
+/* Ensure strong tags are visible */
+.project-description-full strong {
+    color: #e2e8f0 !important;
+    font-weight: 600;
 }
 
 .read-more-btn {
@@ -956,6 +984,44 @@ html {
 .read-more-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+/* See More Projects Button */
+#seeMoreBtn {
+    padding: 0.75rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#seeMoreBtn:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+}
+
+#seeMoreBtn i {
+    transition: transform var(--transition-speed) ease;
+}
+
+/* Additional Projects Animation */
+#moreProjects {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* CTA Box */
@@ -1233,4 +1299,280 @@ html {
     background-color: rgba(236, 72, 153, 0.1);
     border-color: var(--accent-color);
     color: var(--accent-color);
+}
+
+/* ========================================
+   JOURNEY SECTION STYLES
+   ======================================== */
+
+.journey-section {
+    background-color: var(--dark-bg);
+    min-height: 100vh;
+}
+
+.journey-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all var(--transition-speed) ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.journey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.journey-image {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    max-height: 600px;
+}
+
+.journey-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed) ease;
+}
+
+.journey-card:hover .journey-image img {
+    transform: scale(1.1);
+}
+
+.journey-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.journey-card:hover .journey-overlay {
+    opacity: 1;
+}
+
+.image-count-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.image-count-badge i {
+    margin-right: 5px;
+}
+
+.journey-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.journey-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.journey-date {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+}
+
+.journey-date i {
+    margin-right: 5px;
+}
+
+.journey-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--light-text);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.journey-description {
+    color: var(--gray-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-buttons .btn {
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.filter-buttons .btn.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.filter-buttons .btn:not(.active):hover {
+    background-color: var(--card-bg);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Search Box */
+.search-box {
+    flex: 0 1 300px;
+}
+
+.search-box .form-control {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-hover);
+    color: var(--light-text);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+}
+
+.search-box .form-control:focus {
+    background-color: var(--card-hover);
+    border-color: var(--primary-color);
+    color: var(--light-text);
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+.search-box .form-control::placeholder {
+    color: var(--gray-text);
+}
+
+/* Post Modal Styles */
+.modal-content {
+    border-radius: 15px;
+}
+
+.post-full-content h6 {
+    margin-top: 1rem;
+}
+
+.post-full-content ul {
+    margin-bottom: 1rem;
+}
+
+.post-full-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* Image Lightbox */
+#lightboxImage {
+    border-radius: 10px;
+}
+
+.img-thumbnail {
+    background-color: var(--card-bg);
+    border: 2px solid var(--card-hover);
+    transition: all 0.2s ease;
+}
+
+.img-thumbnail:hover {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/* Journey Page Responsive */
+@media (max-width: 991px) {
+    .journey-image {
+        height: 400px;
+    }
+
+    .filter-buttons {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .search-box {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .journey-image {
+        height: 350px;
+    }
+
+    .journey-title {
+        font-size: 1.1rem;
+    }
+
+    .journey-description {
+        font-size: 0.9rem;
+    }
+
+    .filter-buttons .btn {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .journey-image {
+        height: 300px;
+    }
+}
+
+/* Social Media Feed Enhancements */
+#journeyPostsFeed {
+    padding: 0;
+}
+
+.journey-post {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adjust spacing between posts in feed */
+.journey-post.mb-4 {
+    margin-bottom: 2rem !important;
+}
+
+/* Smoother image loading */
+.journey-image img {
+    background: linear-gradient(135deg, var(--card-bg) 0%, var(--card-hover) 100%);
 }
