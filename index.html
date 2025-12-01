@@ -89,6 +89,254 @@
                 background-position: 200% center;
             }
         }
+
+        /* Quick Navigation Cards */
+        .quick-nav-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        .quick-nav-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+            height: 100%;
+        }
+
+        .quick-nav-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .quick-nav-card .card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .quick-nav-card:hover .card {
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
+
+        .quick-nav-icon {
+            opacity: 0.9;
+        }
+
+        /* Back to Top Button */
+        .back-to-top-btn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top-btn:hover {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .back-to-top-btn i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Text Gradient for headings */
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Section styling */
+        section {
+            scroll-margin-top: 80px; /* Offset for fixed navbar */
+        }
+
+        #about {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        #projects {
+            background: #0f1419;
+        }
+
+        #journey {
+            background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+        }
+
+        #contact {
+            background: #0f1419;
+        }
+
+        /* Journey cards styling */
+        .journey-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .journey-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .journey-image {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+        }
+
+        .journey-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .journey-card:hover .journey-image img {
+            transform: scale(1.05);
+        }
+
+        .journey-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .journey-image:hover .journey-overlay {
+            opacity: 1;
+        }
+
+        .image-count-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            z-index: 2;
+        }
+
+        .journey-content {
+            padding: 1.5rem;
+        }
+
+        .journey-meta {
+            margin-bottom: 1rem;
+        }
+
+        .journey-title {
+            color: #fff;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .journey-description {
+            color: #b0b0b0;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .journey-date {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Filter and search styling */
+        .filter-buttons .btn {
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-buttons .btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #667eea;
+        }
+
+        .search-box input {
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .search-box input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #667eea;
+            color: white;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+        /* Contact section styling */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-right: 1.5rem;
+            color: #667eea;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .contact-text h5 {
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .contact-text a {
+            color: #b0b0b0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-text a:hover {
+            color: #667eea;
+        }
     </style>
 </head>
 <body>
@@ -105,19 +353,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="journey.html">Journey</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#journey">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -195,8 +446,117 @@
         </div>
     </section>
 
-    <!-- Skills Preview Section -->
-    <section class="skills-preview-section py-5" id="skills-preview">
+    <!-- About Section -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">About Me</h2>
+
+            <!-- Introduction -->
+            <div class="row mb-5 fade-in-up">
+                <div class="col-lg-10 mx-auto">
+                    <div class="about-intro">
+                        <h3 class="mb-4 text-gradient">Who I Am</h3>
+                        <p class="lead">
+                            I am a Backend Developer skilled in Python, Django, and Django REST Framework, with experience
+                            in Flask and FastAPI. I have worked on e-commerce platforms, social apps, and shopping
+                            applications, handling all aspects of backend development including social logins, Celery with
+                            Redis, push notifications, payment integrations, CMS integrations, authentication, and custom
+                            permissions.
+                        </p>
+                        <p class="lead">
+                            I use proper techniques and best practices provided in Django to write efficient and scalable
+                            code. I have worked extensively with PostgreSQL, MySQL, MongoDB, and ClickHouse, and I am
+                            experienced with Docker, AWS services (Lambda, EC2, S3), CI/CD pipelines, and version control
+                            using Git, GitHub, and GitLab. I also manage projects effectively with Jira, ClickUp, Trello,
+                            and GitLab.
+                        </p>
+                        <p class="lead">
+                            I am eager to learn new technologies, can work under pressure, and take full ownership of my
+                            tasks to deliver high-quality results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="mb-4 text-center text-gradient">Work Experience</h3>
+                </div>
+                <div class="col-lg-10 mx-auto">
+                    <!-- Experience 1 -->
+                    <div class="experience-card fade-in-up mb-4">
+                        <div class="row">
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="experience-year">
+                                    <i class="fas fa-calendar-alt me-2"></i>
+                                    2022 - Present
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h4 class="experience-title">Backend Developer</h4>
+                                <h5 class="experience-company">Enigmatix Pvt Ltd</h5>
+                                <ul class="experience-details">
+                                    <li>Developed and maintained scalable REST APIs using Django REST Framework and FastAPI, applying best practices and efficient backend techniques</li>
+                                    <li>Handled all aspects of backend development for e-commerce platforms, social apps, and shopping applications</li>
+                                    <li>Designed and implemented robust, maintainable backend systems following Django best practices</li>
+                                    <li>Optimized database interactions and improved application performance using PostgreSQL, MySQL, MongoDB, and ClickHouse</li>
+                                    <li>Collaborated with frontend teams to integrate APIs, ensuring seamless user experiences</li>
+                                    <li>Implemented secure authentication and authorization systems using JWT and OAuth2</li>
+                                    <li>Worked with Docker and AWS services (Lambda, EC2, S3) for deployment and DevOps tasks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="experience-card fade-in-up mb-4">
+                        <div class="row">
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="experience-year">
+                                    <i class="fas fa-calendar-alt me-2"></i>
+                                    2021 - 2022
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h4 class="experience-title">Lecturer</h4>
+                                <h5 class="experience-company">Aspire Group of Colleges</h5>
+                                <ul class="experience-details">
+                                    <li>Instructed students in basic and advanced Python programming</li>
+                                    <li>Led lessons on various computer subjects including software, databases, and web technologies</li>
+                                    <li>Managed technical work in the department including computer labs and IT-related tasks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="experience-card fade-in-up">
+                        <div class="row">
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="experience-year">
+                                    <i class="fas fa-calendar-alt me-2"></i>
+                                    2020 - 2021
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <h4 class="experience-title">Teacher</h4>
+                                <h5 class="experience-company">The Educators</h5>
+                                <ul class="experience-details">
+                                    <li>Instructed high school students in computer science and mathematics</li>
+                                    <li>Introduced students to programming concepts and problem-solving techniques</li>
+                                    <li>Assisted in maintaining computer labs and managing technical resources</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-preview-section py-5" id="skills">
         <div class="container">
             <h2 class="text-center mb-5 section-title">Core Competencies</h2>
             <div class="row g-4">
@@ -288,6 +648,711 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section class="projects-section py-5" id="projects">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">My Projects</h2>
+
+            <!-- GitHub Projects -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h3 class="section-subtitle text-gradient mb-4">
+                        <i class="fab fa-github me-2"></i>GitHub & Open Source Projects
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5" id="githubProjectsVisible">
+                <!-- Project 1 - Django Push Notifications -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4 class="project-title">Django Push Notification System</h4>
+                            <span class="badge bg-success text-white mb-2">Open Source</span>
+                            <p class="project-description">
+                                A Django-based push notification system that enables real-time notifications
+                                for web and mobile applications with scheduling and delivery tracking.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">WebSockets</span>
+                                <span class="tech-tag">Celery</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                            <div class="project-footer mt-3">
+                                <a href="https://github.com/tahirhussainswe/django_projects" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fab fa-github me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - REST API -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4 class="project-title">RESTful API with DRF</h4>
+                            <span class="badge bg-success text-white mb-2">Open Source</span>
+                            <p class="project-description">
+                                Comprehensive REST API showcasing best practices with JWT authentication,
+                                pagination, filtering, and Swagger documentation.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">DRF</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Swagger</span>
+                            </div>
+                            <div class="project-footer mt-3">
+                                <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fab fa-github me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Task Manager -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4 class="project-title">Task Management System API</h4>
+                            <span class="badge bg-success text-white mb-2">Open Source</span>
+                            <p class="project-description">
+                                FastAPI task management system with real-time updates, async patterns,
+                                and WebSocket integration for team collaboration.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">WebSockets</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                            <div class="project-footer mt-3">
+                                <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fab fa-github me-1"></i>View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See More GitHub Projects Button -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-success btn-lg" id="seeMoreGithubBtn" onclick="toggleGithubProjects()">
+                        <i class="fas fa-chevron-down me-2"></i>See More GitHub Projects
+                    </button>
+                </div>
+            </div>
+
+            <!-- Additional GitHub Projects (Hidden by default) -->
+            <div id="moreGithubProjects" style="display: none;">
+                <div class="row g-4 mb-5">
+                    <!-- Project 4 - Weather API -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-content">
+                                <h4 class="project-title">Weather Data Aggregation API</h4>
+                                <span class="badge bg-success text-white mb-2">Open Source</span>
+                                <p class="project-description">
+                                    Weather API aggregating data from multiple sources with caching,
+                                    rate limiting, and location-based forecasts.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Celery</span>
+                                    <span class="tech-tag">API Integration</span>
+                                </div>
+                                <div class="project-footer mt-3">
+                                    <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-sm btn-outline-success">
+                                        <i class="fab fa-github me-1"></i>View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 - Blog Platform -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-content">
+                                <h4 class="project-title">Blog Platform with Comments</h4>
+                                <span class="badge bg-success text-white mb-2">Open Source</span>
+                                <p class="project-description">
+                                    Full-featured blog platform with rich text editor, commenting system,
+                                    and user authentication.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                </div>
+                                <div class="project-footer mt-3">
+                                    <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-sm btn-outline-success">
+                                        <i class="fab fa-github me-1"></i>View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Projects -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h3 class="section-subtitle text-gradient mb-4">
+                        <i class="fas fa-briefcase me-2"></i>Client Projects
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row g-4" id="clientProjectsVisible">
+                <!-- OmniCMS -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4 class="project-title">OmniCMS Platform</h4>
+                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
+                            <p class="project-description">
+                                Multi-platform CMS integration with SEO optimization powered by GCP. Supports 10+ platforms
+                                including HubSpot, WordPress, Shopify, and more.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">DRF</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">GCP</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4 class="project-title">E-commerce Platform</h4>
+                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
+                            <p class="project-description">
+                                Full-stack e-commerce platform with Stripe payments, dynamic product management,
+                                and seamless Django template integration.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Commerce -->
+                <div class="col-lg-4 col-md-6 fade-in-up">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h4 class="project-title">Social Commerce Platform</h4>
+                            <span class="badge bg-warning text-dark mb-2">Client Project</span>
+                            <p class="project-description">
+                                Social commerce platform with multi-platform authentication, Shopify integration,
+                                and automated commission payouts via Stripe.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">OAuth 2.0</span>
+                                <span class="tech-tag">Shopify API</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- See More Client Projects Button -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-warning btn-lg" id="seeMoreClientBtn" onclick="toggleClientProjects()">
+                        <i class="fas fa-chevron-down me-2"></i>See More Client Projects
+                    </button>
+                </div>
+            </div>
+
+            <!-- Additional Client Projects (Hidden by default) -->
+            <div id="moreClientProjects" style="display: none;">
+                <div class="row g-4 mt-4">
+                    <!-- Construction Reporting -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-content">
+                                <h4 class="project-title">Construction Analytics Platform</h4>
+                                <span class="badge bg-warning text-dark mb-2">Client Project</span>
+                                <p class="project-description">
+                                    Django-based platform analyzing Primavera P6 schedules with Monte Carlo simulation,
+                                    critical path analysis, and predictive forecasting.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">DRF</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Celery</span>
+                                    <span class="tech-tag">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inventory Management -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="project-card">
+                            <div class="project-content">
+                                <h4 class="project-title">Inventory Management System</h4>
+                                <span class="badge bg-warning text-dark mb-2">Client Project</span>
+                                <p class="project-description">
+                                    Real-time inventory tracking system with barcode scanning, stock alerts,
+                                    and comprehensive reporting dashboard.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Celery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="row mt-5">
+                <div class="col-12 text-center fade-in-up">
+                    <a href="https://github.com/tahirhussainswe" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="fab fa-github me-2"></i>View More on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey-section py-5" id="journey">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Professional Journey</h2>
+            <p class="text-center lead mb-4">Behind the scenes of my development career</p>
+
+            <!-- Section Header with Filters -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                        <!-- Filter Buttons -->
+                        <div class="filter-buttons">
+                            <button class="btn btn-sm btn-outline-primary active" data-filter="all">All</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="meeting">Meetings</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="team">Team</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="achievement">Achievements</button>
+                            <button class="btn btn-sm btn-outline-primary" data-filter="learning">Learnings</button>
+                        </div>
+
+                        <!-- Search Box -->
+                        <div class="search-box">
+                            <input type="text" class="form-control" id="journeySearch" placeholder="Search posts...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Journey Posts Feed -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <div id="journeyPostsFeed">
+                        <!-- Post 1 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="meeting">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80" alt="CEO Strategy Meeting" class="img-fluid">
+                                    <div class="image-count-badge">
+                                        <i class="fas fa-images"></i> +3 photos
+                                    </div>
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(1)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-primary">Meeting</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 25, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">CEO Strategy Session - Q4 Planning</h4>
+                                    <p class="journey-description">
+                                        Today we had an incredible strategy meeting with the CEO discussing our Q4 roadmap.
+                                        We brainstormed new features, reviewed current progress, and aligned on priorities.
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(1)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 2 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="achievement">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80" alt="Successful Deployment" class="img-fluid">
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(2)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-success">Achievement</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 22, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">Successfully Deployed Multi-CMS Integration</h4>
+                                    <p class="journey-description">
+                                        A major milestone! Successfully deployed the OmniCMS platform with 10+ CMS integrations.
+                                        Zero downtime, smooth rollout, and positive client feedback.
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(2)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 3 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="team">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80" alt="Team Brainstorming" class="img-fluid">
+                                    <div class="image-count-badge">
+                                        <i class="fas fa-images"></i> +2 photos
+                                    </div>
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(3)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-info">Team Collaboration</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 20, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">Architecture Design Discussion with Team</h4>
+                                    <p class="journey-description">
+                                        Spent the afternoon with the development team discussing the architecture for our new microservices implementation.
+                                        Great ideas from everyone!
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(3)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 4 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="learning">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Code Review Session" class="img-fluid">
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(4)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-warning text-dark">Learning</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 18, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">Code Review Best Practices Session</h4>
+                                    <p class="journey-description">
+                                        Led a knowledge-sharing session on code review best practices. Discussed clean code principles,
+                                        security considerations, and constructive feedback.
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(4)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 5 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="team">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80" alt="Team Celebration" class="img-fluid">
+                                    <div class="image-count-badge">
+                                        <i class="fas fa-images"></i> +4 photos
+                                    </div>
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(5)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-info">Team Collaboration</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 15, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">Team Celebration - Project Milestone</h4>
+                                    <p class="journey-description">
+                                        After months of hard work, we finally hit a major project milestone! The team celebrated with lunch together.
+                                        Great food and even better teamwork!
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(5)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End journeyPostsFeed visible posts -->
+
+                    <!-- See More Journey Posts Button -->
+                    <div class="text-center mt-4" id="seeMoreJourneyBtnContainer">
+                        <button class="btn btn-outline-primary btn-lg" id="seeMoreJourneyBtn" onclick="toggleJourneyPosts()">
+                            <i class="fas fa-chevron-down me-2"></i>See More Posts
+                        </button>
+                    </div>
+
+                    <!-- Additional Journey Posts (Hidden by default) -->
+                    <div id="moreJourneyPosts" style="display: none;">
+                        <!-- Post 6 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="achievement">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Performance Results" class="img-fluid">
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(6)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-success">Achievement</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 12, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">Optimized API Response Time by 60%</h4>
+                                    <p class="journey-description">
+                                        After analyzing bottlenecks and implementing caching strategies with Redis, we reduced API response time from
+                                        500ms to 200ms. Performance optimization pays off!
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(6)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 7 - Multi-Image Gallery Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="meeting">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80" alt="Client Presentation" class="img-fluid">
+                                    <div class="image-count-badge">
+                                        <i class="fas fa-images"></i> +3 photos
+                                    </div>
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(7)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-primary">Meeting</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 10, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">Client Presentation - New Feature Demo</h4>
+                                    <p class="journey-description">
+                                        Presented our latest features to the client today. The demo went smoothly and they were
+                                        impressed with the progress. Received approval to proceed with Phase 2!
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(7)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Post 8 - Single Image Post -->
+                        <div class="journey-post fade-in-up mb-4" data-category="learning">
+                            <div class="journey-card">
+                                <div class="journey-image">
+                                    <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1000&q=80" alt="Technology Workshop" class="img-fluid">
+                                    <div class="journey-overlay">
+                                        <button class="btn btn-light btn-sm view-post-btn" onclick="openPostModal(8)">
+                                            <i class="fas fa-eye me-1"></i>View Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="journey-content">
+                                    <div class="journey-meta">
+                                        <span class="badge bg-warning text-dark">Learning</span>
+                                        <span class="journey-date"><i class="far fa-calendar"></i> Nov 8, 2025</span>
+                                    </div>
+                                    <h4 class="journey-title">Attended Docker & Kubernetes Workshop</h4>
+                                    <p class="journey-description">
+                                        Great day learning advanced container orchestration techniques. Workshop covered scaling strategies,
+                                        service mesh, and monitoring. Ready to apply these concepts!
+                                    </p>
+                                    <button class="btn btn-sm btn-outline-primary mt-2" onclick="openPostModal(8)">
+                                        <i class="fas fa-book-open me-1"></i>Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End moreJourneyPosts -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="postModalLabel">Post Title</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="postModalBody">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Lightbox Modal -->
+    <div class="modal fade" id="imageLightbox" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <span class="text-light" id="imageCounter">1 of 4</span>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center position-relative">
+                    <button class="btn btn-light position-absolute start-0 ms-3" id="prevImageBtn" style="z-index: 10;">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <img src="" alt="Gallery Image" class="img-fluid" id="lightboxImage" style="max-height: 80vh;">
+                    <button class="btn btn-light position-absolute end-0 me-3" id="nextImageBtn" style="z-index: 10;">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <div id="thumbnailContainer" class="d-flex gap-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Get In Touch</h2>
+            <p class="text-center lead mb-5">Let's discuss your next backend project or collaboration opportunity</p>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto fade-in-up">
+                    <div class="contact-info">
+                        <div class="contact-details mb-4">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>Email</h5>
+                                    <a href="mailto:tahirhussain.swe@gmail.com">tahirhussain.swe@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>WhatsApp</h5>
+                                    <a href="https://wa.me/923016480483" target="_blank">+92 301 6480483</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>LinkedIn</h5>
+                                    <a href="https://linkedin.com/in/muhammadtahirhussain" target="_blank">Muhammad Tahir Hussain</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h5>GitHub</h5>
+                                    <a href="https://github.com/tahirhussainswe" target="_blank">tahirhussainswe</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Download Resume -->
+                        <div class="resume-download text-center mb-4">
+                            <a href="https://drive.google.com/file/d/13_sDiMFL4QtkbsVauegfoHY775DWr8zy/view?usp=drive_link" target="_blank" class="btn btn-primary btn-lg">
+                                <i class="fas fa-download me-2"></i>Download Resume (PDF)
+                            </a>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-links-section text-center">
+                            <h4 class="mb-3">Follow Me</h4>
+                            <div class="social-links justify-content-center">
+                                <a href="https://linkedin.com/in/muhammadtahirhussain" target="_blank" class="social-icon" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/tahirhussainswe" target="_blank" class="social-icon" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://wa.me/923016480483" target="_blank" class="social-icon" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:tahirhussain.swe@gmail.com" class="social-icon" title="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Footer -->
     <footer class="footer text-center py-4">
         <div class="container">
@@ -328,6 +1393,441 @@
 
         // Change skill every 2 seconds
         setInterval(changeSkill, 2000);
+
+        // Back to Top Button functionality
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        // Show button when user scrolls down 300px from the top
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+
+        // Scroll to top when button is clicked
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+
+                    // Smooth scroll with offset for fixed navbar
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting on scroll
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - navbarHeight - 100;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ============================================
+        // JOURNEY SECTION FUNCTIONALITY
+        // ============================================
+
+        // Sample post data with images
+        const journeyPosts = {
+            1: {
+                title: "CEO Strategy Session - Q4 Planning",
+                category: "Meeting",
+                date: "Nov 25, 2025",
+                fullDescription: `
+                    <p>Today was an incredibly productive day! We had our quarterly strategy meeting with the CEO and leadership team to plan our Q4 roadmap.</p>
+                    <p>The meeting started with a review of Q3 achievements. Then we dove into planning new features and initiatives for Q4.</p>
+                    <p>Key discussion points included:</p>
+                    <ul>
+                        <li>Expanding our CMS integration platform to support 5 more platforms</li>
+                        <li>Implementing AI-powered content recommendations</li>
+                        <li>Improving our API performance and scalability</li>
+                        <li>Building out the mobile application</li>
+                    </ul>
+                    <p>Looking forward to executing on these exciting plans!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80", caption: "CEO presenting Q4 roadmap" },
+                    { url: "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1000&q=80", caption: "Whiteboard brainstorming" },
+                    { url: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=80", caption: "Team discussing architecture" },
+                    { url: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80", caption: "Full team after meeting" }
+                ]
+            },
+            2: {
+                title: "Successfully Deployed Multi-CMS Integration",
+                category: "Achievement",
+                date: "Nov 22, 2025",
+                fullDescription: `
+                    <p>After months of development, we successfully deployed the OmniCMS platform with support for 10+ CMS integrations.</p>
+                    <p>The deployment went incredibly smooth - zero downtime, all integrations working perfectly!</p>
+                    <p>Highlights from this achievement:</p>
+                    <ul>
+                        <li>Deployed to production with zero issues</li>
+                        <li>All 10+ CMS integrations passed connection tests</li>
+                        <li>API response times under 200ms</li>
+                        <li>Client gave immediate positive feedback</li>
+                    </ul>
+                    <p>Grateful to work with such a talented team! 🚀</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80", caption: "Successful deployment dashboard" }
+                ]
+            },
+            3: {
+                title: "Architecture Design Discussion with Team",
+                category: "Team Collaboration",
+                date: "Nov 20, 2025",
+                fullDescription: `
+                    <p>Spent a fantastic afternoon diving deep into the architecture design for our upcoming microservices implementation.</p>
+                    <p>We mapped out:</p>
+                    <ul>
+                        <li>Service boundaries and responsibilities</li>
+                        <li>Communication patterns (REST vs message queues)</li>
+                        <li>Data storage strategies for each service</li>
+                        <li>Authentication and authorization flow</li>
+                    </ul>
+                    <p>Can't wait to start implementing this architecture!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1000&q=80", caption: "Team around whiteboard" },
+                    { url: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80", caption: "Architecture diagram" },
+                    { url: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80", caption: "Discussing technical details" }
+                ]
+            },
+            4: {
+                title: "Code Review Best Practices Session",
+                category: "Learning",
+                date: "Nov 18, 2025",
+                fullDescription: `
+                    <p>Led a knowledge-sharing session on code review best practices.</p>
+                    <p>Topics covered:</p>
+                    <ul>
+                        <li><strong>Clean Code:</strong> Readability and maintainability</li>
+                        <li><strong>Security:</strong> Common vulnerabilities to watch for</li>
+                        <li><strong>Performance:</strong> Database queries and caching</li>
+                        <li><strong>Feedback:</strong> How to be constructive and helpful</li>
+                    </ul>
+                    <p>The team was highly engaged with lots of great questions!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80", caption: "Presenting code review guidelines" }
+                ]
+            },
+            5: {
+                title: "Team Celebration - Project Milestone",
+                category: "Team Collaboration",
+                date: "Nov 15, 2025",
+                fullDescription: `
+                    <p>After months of intensive work, we hit a major project milestone and celebrated as a team!</p>
+                    <p>What made this milestone special:</p>
+                    <ul>
+                        <li>Delivered on time despite complexity</li>
+                        <li>Every team member contributed significantly</li>
+                        <li>Client was extremely satisfied</li>
+                        <li>We learned so many new technologies</li>
+                    </ul>
+                    <p>It's not just about the code - it's about the relationships we build! 🎉</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80", caption: "Team enjoying lunch" },
+                    { url: "https://images.unsplash.com/photo-1530099486328-e021101a494a?auto=format&fit=crop&w=1000&q=80", caption: "Celebrating the milestone" },
+                    { url: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1000&q=80", caption: "Group photo - part 1" },
+                    { url: "https://images.unsplash.com/photo-1527525443983-6e60c75fff46?auto=format&fit=crop&w=1000&q=80", caption: "Group photo - part 2" },
+                    { url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80", caption: "Back at the office" }
+                ]
+            },
+            6: {
+                title: "Optimized API Response Time by 60%",
+                category: "Achievement",
+                date: "Nov 12, 2025",
+                fullDescription: `
+                    <p>Performance matters! After noticing slow API response times, I took it upon myself to analyze and optimize our backend.</p>
+                    <p><strong>What I did:</strong></p>
+                    <ul>
+                        <li>Analyzed database queries and identified N+1 problems</li>
+                        <li>Implemented Redis caching for frequently accessed data</li>
+                        <li>Added database indexes on commonly queried fields</li>
+                        <li>Optimized serializers in Django REST Framework</li>
+                    </ul>
+                    <p><strong>Results:</strong> Response time dropped from 500ms to 200ms (60% improvement)!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80", caption: "Performance metrics dashboard" }
+                ]
+            },
+            7: {
+                title: "Client Presentation - New Feature Demo",
+                category: "Meeting",
+                date: "Nov 10, 2025",
+                fullDescription: `
+                    <p>Had an exciting client presentation today showcasing our new features!</p>
+                    <p>Demonstrated:</p>
+                    <ul>
+                        <li>New analytics dashboard with real-time metrics</li>
+                        <li>Enhanced user management system</li>
+                        <li>Automated reporting features</li>
+                        <li>Mobile responsive design</li>
+                    </ul>
+                    <p>Client was very impressed and gave immediate approval for Phase 2 development! 🎉</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80", caption: "Presenting to client" },
+                    { url: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1000&q=80", caption: "Demo walkthrough" },
+                    { url: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1000&q=80", caption: "Client feedback discussion" },
+                    { url: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1000&q=80", caption: "Team celebrating approval" }
+                ]
+            },
+            8: {
+                title: "Attended Docker & Kubernetes Workshop",
+                category: "Learning",
+                date: "Nov 8, 2025",
+                fullDescription: `
+                    <p>Invested time in professional development by attending a comprehensive Docker & Kubernetes workshop.</p>
+                    <p>Topics covered:</p>
+                    <ul>
+                        <li><strong>Containerization:</strong> Advanced Docker techniques and best practices</li>
+                        <li><strong>Orchestration:</strong> Kubernetes architecture and deployment strategies</li>
+                        <li><strong>Scaling:</strong> Horizontal pod autoscaling and load balancing</li>
+                        <li><strong>Monitoring:</strong> Prometheus and Grafana integration</li>
+                        <li><strong>Service Mesh:</strong> Istio fundamentals</li>
+                    </ul>
+                    <p>Excited to implement these learnings in our upcoming projects!</p>
+                `,
+                images: [
+                    { url: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1000&q=80", caption: "Workshop session" }
+                ]
+            }
+        };
+
+        // Open post modal with full details
+        function openPostModal(postId) {
+            const post = journeyPosts[postId];
+            if (!post) return;
+
+            const modalTitle = document.getElementById('postModalLabel');
+            const modalBody = document.getElementById('postModalBody');
+
+            modalTitle.textContent = post.title;
+
+            let imagesHTML = '';
+            if (post.images.length > 1) {
+                imagesHTML = `
+                    <div class="row g-2 mb-3">
+                        ${post.images.map((img, index) => `
+                            <div class="col-6">
+                                <img src="${img.url}" alt="${img.caption}" class="img-fluid rounded cursor-pointer"
+                                     onclick="openImageLightbox(${postId}, ${index})"
+                                     style="cursor: pointer; width: 100%; height: 200px; object-fit: cover;">
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } else {
+                imagesHTML = `
+                    <img src="${post.images[0].url}" alt="${post.images[0].caption}" class="img-fluid rounded mb-3">
+                `;
+            }
+
+            modalBody.innerHTML = `
+                <div class="mb-2">
+                    <span class="badge bg-primary me-2">${post.category}</span>
+                    <span class="text-muted"><i class="far fa-calendar me-1"></i>${post.date}</span>
+                </div>
+                ${imagesHTML}
+                <div class="post-full-content">
+                    ${post.fullDescription}
+                </div>
+            `;
+
+            const modal = new bootstrap.Modal(document.getElementById('postModal'));
+            modal.show();
+        }
+
+        // Open image lightbox
+        let currentPostId = null;
+        let currentImageIndex = 0;
+
+        function openImageLightbox(postId, imageIndex) {
+            currentPostId = postId;
+            currentImageIndex = imageIndex;
+            updateLightboxImage();
+
+            const modal = new bootstrap.Modal(document.getElementById('imageLightbox'));
+            modal.show();
+        }
+
+        function updateLightboxImage() {
+            const post = journeyPosts[currentPostId];
+            if (!post) return;
+
+            const lightboxImage = document.getElementById('lightboxImage');
+            const imageCounter = document.getElementById('imageCounter');
+            const thumbnailContainer = document.getElementById('thumbnailContainer');
+
+            lightboxImage.src = post.images[currentImageIndex].url;
+            lightboxImage.alt = post.images[currentImageIndex].caption;
+            imageCounter.textContent = `${currentImageIndex + 1} of ${post.images.length}`;
+
+            // Update thumbnails
+            thumbnailContainer.innerHTML = post.images.map((img, index) => `
+                <img src="${img.url}" alt="${img.caption}"
+                     class="img-thumbnail ${index === currentImageIndex ? 'border-primary' : ''}"
+                     style="width: 80px; height: 60px; object-fit: cover; cursor: pointer;"
+                     onclick="currentImageIndex = ${index}; updateLightboxImage();">
+            `).join('');
+        }
+
+        document.getElementById('prevImageBtn').addEventListener('click', () => {
+            const post = journeyPosts[currentPostId];
+            if (!post) return;
+            currentImageIndex = (currentImageIndex - 1 + post.images.length) % post.images.length;
+            updateLightboxImage();
+        });
+
+        document.getElementById('nextImageBtn').addEventListener('click', () => {
+            const post = journeyPosts[currentPostId];
+            if (!post) return;
+            currentImageIndex = (currentImageIndex + 1) % post.images.length;
+            updateLightboxImage();
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-buttons .btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active state
+                document.querySelectorAll('.filter-buttons .btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+                const posts = document.querySelectorAll('.journey-post');
+
+                posts.forEach(post => {
+                    if (filter === 'all' || post.getAttribute('data-category') === filter) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        document.getElementById('journeySearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const posts = document.querySelectorAll('.journey-post');
+
+            posts.forEach(post => {
+                const title = post.querySelector('.journey-title').textContent.toLowerCase();
+                const description = post.querySelector('.journey-description').textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        });
+
+        // ============================================
+        // SEE MORE / SEE LESS TOGGLE FUNCTIONS
+        // ============================================
+
+        // Toggle GitHub Projects
+        function toggleGithubProjects() {
+            const moreProjects = document.getElementById('moreGithubProjects');
+            const btn = document.getElementById('seeMoreGithubBtn');
+            const icon = btn.querySelector('i');
+
+            if (moreProjects.style.display === 'none') {
+                moreProjects.style.display = 'block';
+                btn.innerHTML = '<i class="fas fa-chevron-up me-2"></i>See Less';
+                // Smooth scroll to show new content
+                setTimeout(() => {
+                    moreProjects.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
+            } else {
+                moreProjects.style.display = 'none';
+                btn.innerHTML = '<i class="fas fa-chevron-down me-2"></i>See More GitHub Projects';
+                // Scroll back to visible projects
+                document.getElementById('githubProjectsVisible').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        // Toggle Client Projects
+        function toggleClientProjects() {
+            const moreProjects = document.getElementById('moreClientProjects');
+            const btn = document.getElementById('seeMoreClientBtn');
+
+            if (moreProjects.style.display === 'none') {
+                moreProjects.style.display = 'block';
+                btn.innerHTML = '<i class="fas fa-chevron-up me-2"></i>See Less';
+                // Smooth scroll to show new content
+                setTimeout(() => {
+                    moreProjects.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
+            } else {
+                moreProjects.style.display = 'none';
+                btn.innerHTML = '<i class="fas fa-chevron-down me-2"></i>See More Client Projects';
+                // Scroll back to visible projects
+                document.getElementById('clientProjectsVisible').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        // Toggle Journey Posts
+        function toggleJourneyPosts() {
+            const morePosts = document.getElementById('moreJourneyPosts');
+            const btn = document.getElementById('seeMoreJourneyBtn');
+
+            if (morePosts.style.display === 'none') {
+                morePosts.style.display = 'block';
+                btn.innerHTML = '<i class="fas fa-chevron-up me-2"></i>See Less Posts';
+                // Smooth scroll to show new content
+                setTimeout(() => {
+                    morePosts.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
+            } else {
+                morePosts.style.display = 'none';
+                btn.innerHTML = '<i class="fas fa-chevron-down me-2"></i>See More Posts';
+                // Scroll back to visible posts
+                document.getElementById('journeyPostsFeed').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
     </script>
 </body>
 </html>
